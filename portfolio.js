@@ -3,7 +3,7 @@
 
 let debug_state
 
-debug_state = "tutaj cokolwiek poza tym tekstem włączy debug";
+debug_state = "Htutaj cokolwiek poza tym tekstem włączy debug";
 
 if(debug_state == "tutaj cokolwiek poza tym tekstem włączy debug"){
     void(0);
@@ -105,7 +105,8 @@ $(function(){
 
         $('.textbox').toggleClass('textbox_appear');
         document.querySelector("#textbox1").style.display = "block"
-
+        $('#btn1c_moveUp').toggleClass('btn_moveUp');
+        
     });
 });
 
