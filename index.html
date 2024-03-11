@@ -27,18 +27,20 @@
 
 <body>
 
-    <a href="vertical.html" style="font-size: 2vw; color: black; position: absolute; z-index: 50;">VERTICAL</a>
-    <a href="web_app.html" style="font-size: 2vw; color: black; position: absolute; z-index: 50; top: 5vw;">WEB APP</a>
-    
-    <a href="https://pawlogates.itch.io/exponaut" style="font-size: 3.5vw; color: rgb(255, 0, 0); position: absolute; top: 8vw; z-index: 50;">coś</a>
-    
-
     <div class="main_container">
 
         <div class="elements_container">
 
             <div class="main_overlay"></div>
             <!--<div class="main_overlay2"></div>-->
+
+            <div class="element_box" style="grid-column: 1 / span 3; grid-row: 1 / span 0;">
+                <p style="margin: 0;">PROJEKTY:</p>
+        
+            </div>
+
+
+
 
             <div class="element_box" style="grid-column: 2; grid-row: 2;">
                 <div class="button_a" id="btn1a"></div>
@@ -47,23 +49,30 @@
                     
             </div>
 
-            <div class="element_box" style="grid-column: 2; grid-row: 3; transform: translateX(-1vw);">
+            <div class="element_box" style="grid-column: 2; grid-row: 3; transform: translateX(1vw);">
                 <div class="button_a" id="btn2a"></div>
                 <h1 class="button_a_text">2</h1>
 
                     
             </div>
 
-            <div class="element_box" style="grid-column: 2; grid-row: 4;">
+            <div class="element_box" style="grid-column: 2; grid-row: 4; transform: translateX(2vw);">
                 <div class="button_a" id="btn3a"></div>
                 <h1 class="button_a_text">3</h1>
 
                     
             </div>
 
-            <div class="element_box" style="grid-column: 2; grid-row: 5; transform: translateX(-1vw);">
-                <div class="button_a" id="btn2a"></div>
+            <div class="element_box" style="grid-column: 2; grid-row: 5; transform: translateX(1vw);">
+                <div class="button_a" id="btn4a"></div>
                 <h1 class="button_a_text">4</h1>
+
+                    
+            </div>
+
+            <div class="element_box" style="grid-column: 2; grid-row: 6; transform: translateX(0vw);">
+                <div class="button_a" id="btn5a"></div>
+                <h1 class="button_a_text">5</h1>
 
                     
             </div>
@@ -72,7 +81,7 @@
 
 
 
-            <div class="element_box" style="grid-column: 6; grid-row: 8;">
+            <div class="element_box" style="grid-column: 7; grid-row: 8;">
                 <div class="button_b" id="btn1b" style="z-index: 50;"></div>
                 <div class="button_b_icon" style="z-index: 51;"></div>
 
@@ -180,7 +189,7 @@
                 <div class="inside_section">
                     <h1 class="text_top">Projekt 1 - Moddworld</h1>
                     <p class="text_main">Jest to strona internetowa, stworzona w celu dokumentacji i zapewnienia łatwego dostępu do fanowskich modów do gry "Oddworld: Abe's Oddysee". </p>
-                    <a class="text_link" href="https://moddworld-ow.github.io/">link do strony</a>
+                    <a class="text_link" href="Moddworld/Moddworld.html">Link do strony</a>
                 </div>
             </div>
 
@@ -196,9 +205,10 @@
 
             <div class="section_type1">
                 <div class="inside_section">
-                    <h1 class="text_top">NAGŁÓWEK</h1>
-                    <p class="text_main">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
-
+                    <h1 class="text_top">Projekt 2 - Combonaut</h1>
+                    <p class="text_main">Moja pierwsza gra, napisana w javascript. Polega na używaniu mnożników punktów w odpowiedni sposób, aby zdobyć jak najwięcej punktów.</p>
+                    <a class="text_link" href="Combonaut/Combonaut.html">Link do gry</a>
+              
                 </div>
             </div>
 
@@ -214,8 +224,48 @@
 
             <div class="section_type1">
                 <div class="inside_section">
-                    <h1 class="text_top">NAGŁÓWEK</h1>
-                    <p class="text_main">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+                    <h1 class="text_top">Projekt 3 - Pekka Kana Zero</h1>
+                    <p class="text_main">Pełne odtworzenie gry Pekka Kana 2 w silniku Godot, oraz przerobienie całej grafiki na wersję wysokiej jakości. (Nadal bardzo aktywnie pracuję nad tą bazą, i ostateczna grą ma na razie nazwę "Exponaut". Pekka Kana Zero to tylko branch tego projektu bo chciałem mieć coś SKOŃCZONEGO po 4 miesiącach aktywnej pracy. Gra jest (bardzo) oparta na nielinearności, oraz systemach pozwalających na sprytne zwiększanie wartości zbieranych punktów.)</p>
+                    <a class="text_link" style="display: inline; margin: auto; margin-left: 4vw; font-size: 2vw;" href="https://godotengine.org/asset-library/asset/2455">Strona gry</a>
+                    <a class="text_link" style="display: inline; margin: auto; margin-left: 7vw; font-size: 2vw;" href="https://youtu.be/U1-YAEV2icw?si=RcnVkANvFQuSX_Ft">Film z gry</a>
+
+                </div>
+            </div>
+
+            <div class="section_type2" style="background-image: url(images/wp4.png);">
+                <div class="inside_section">
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="slider" id="slider4" style="background-image: url(images/Portfolio\ \(rysunek\).png); transform: translateX(-15vw);">
+
+            <div class="section_type1 hide_on_hover" style="left: 0vw; height: 8vw !important; aspect-ratio: 6/2;">
+                <div class="inside_section" style="height: 20vw !important;">
+                    <h1 class="text_top">Grafika + Inne strony</h1>
+                    <p class="text_main">...</p>
+         
+                </div>
+            </div>
+
+            <div class="section_type2 hide_on_hover" style="background-image: url(images/Portfolio\ \(design\).png); transform: translateX(33vw);">
+                <div class="inside_section">
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="slider" id="slider5" style="background-image: url(images/wp8.png);">
+
+            <div class="section_type1">
+                <div class="inside_section">
+                    <h1 class="text_top">Projekt 3 - Pekka Kana Zero</h1>
+                    <p class="text_main">Pełne odtworzenie gry Pekka Kana 2 w silniku Godot, oraz przerobienie całej grafiki na wersję wysokiej jakości. (Nadal bardzo aktywnie pracuję nad tą bazą, i ostateczna grą ma na razie nazwę "Exponaut". Pekka Kana Zero to tylko branch tego projektu bo chciałem mieć coś SKOŃCZONEGO po 4 miesiącach aktywnej pracy. Gra jest (bardzo) oparta na nielinearności, oraz systemach pozwalających na sprytne zwiększanie wartości zbieranych punktów.)</p>
+                    <a class="text_link" style="display: inline; margin: auto; margin-left: 4vw; font-size: 2vw;" href="https://godotengine.org/asset-library/asset/2455">Strona gry</a>
+                    <a class="text_link" style="display: inline; margin: auto; margin-left: 7vw; font-size: 2vw;" href="https://youtu.be/U1-YAEV2icw?si=RcnVkANvFQuSX_Ft">Film z gry</a>
 
                 </div>
             </div>
@@ -231,8 +281,8 @@
         <div class="closer" id="closer1"></div>
         <div class="closer" id="closer2"></div>
         <div class="closer" id="closer3"></div>
-
-
+        <div class="closer" id="closer4" style="top : -0.8vw"></div>
+        <div class="closer" id="closer5"></div>
 
 
 

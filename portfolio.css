@@ -98,7 +98,7 @@ html {
 .element_box {
     display: flex;
     background-color: none;
-    outline: red 2px solid;
+    outline: none;
 
     justify-content: center;
     align-items: center;
@@ -946,6 +946,8 @@ html {
     aspect-ratio: 1/1;
     background-image: url(images/user_image.png);
     background-size: 100%;
+    outline: rgb(0, 0, 0) 0.2vw solid;
+    border: rgb(255, 255, 255) 0.15vw solid;
 }
 
 
@@ -977,4 +979,9 @@ html {
     border-radius: 1vw;
     outline: white 0.2vw solid;
 
+}
+
+.hide_on_hover:hover {
+    opacity: 0;
+    transition-duration: 1s;
 }

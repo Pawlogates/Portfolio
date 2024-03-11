@@ -87,6 +87,46 @@ $(function(){
     });
 });
 
+$(function(){
+    $('#btn4a').on('click', function(){
+
+        $('#slider4').toggleClass('slider_active');
+        $('.elements_container').toggleClass('elements_container_hidden');
+        $('#closer4').toggleClass('closer_active');
+
+    });
+});
+
+$(function(){
+    $('#closer4').on('click', function(){
+
+        $('#slider4').toggleClass('slider_active');
+        $('.elements_container').toggleClass('elements_container_hidden');
+        $('#closer4').toggleClass('closer_active');
+
+    });
+});
+
+$(function(){
+    $('#btn5a').on('click', function(){
+
+        $('#slider5').toggleClass('slider_active');
+        $('.elements_container').toggleClass('elements_container_hidden');
+        $('#closer5').toggleClass('closer_active');
+
+    });
+});
+
+$(function(){
+    $('#closer5').on('click', function(){
+
+        $('#slider5').toggleClass('slider_active');
+        $('.elements_container').toggleClass('elements_container_hidden');
+        $('#closer5').toggleClass('closer_active');
+
+    });
+});
+
 /* B-TYPE BUTTONS */
 
 $(function(){
