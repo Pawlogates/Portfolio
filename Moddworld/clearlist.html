@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="clearlist.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div style="z-index: 200; outline: red 0.5vw solid; width: 10vw; position: absolute; margin: auto; display: block; text-align: center; left: 0; right: 0; height: 5vw; background-color: red; top: -1vw;">
+    <div style="outline: red 0.5vw solid; width: 10vw; position: absolute; margin: auto; display: block; text-align: center; left: 0; right: 0; height: 5vw; border-radius: 100%; padding-bottom: 2vw; top: 2vw; background-color: rgb(255, 0, 0);"></div>
+    <a href="index.html" style="position: absolute; margin: auto; display: block; text-align: center; width: 100%; top: 4vw; color: white; font-size: 1.7vw;">POWRÓT</a>
+  </div>
+
+  <div class="container">
+
+    <nav class="navbar">
+      <div class="navbar_bg"></div>
+      
+      <h1>The Clear List</h1>
+      <ul>
+        <li><a href="#">thing1</a></li>
+        <li><a href="#">thing2 </a></li>
+
+      </ul>
+    </nav>
+    <div class="swiping_back"></div>
+    <div class="dashboard">
+
+      <div class="text_on_top">
+     
+        <h2 style="display: inline; width: 25%; text-align: center; margin-left: 2%; text-wrap: nowrap;">Submit Your Clear</h2>
+        <h2 style="display: inline; width: 25%; text-align: center;">Top Clears</h2>
+        <h2 style="display: inline; width: 25%; text-align: center; margin-right: 2%">All Clears</h2>
+
+      </div>
+
+      <div class="text_on_top_alt">Submit your clear!</div>
+
+
+      <div class="card_on_top" id="top_card">
+
+        <div class="card_filler">Submit mod info:</div>
+
+        <form>
+          <label for="mod" style="margin-top: 15px">Custom Level Mod</label>
+          <select id="mod" class="category-select">
+            <option value="mod1">The Smegpack</option>
+            <option value="mod2">Evenwurst Weenerz</option>
+            <option value="mod3">Oddysee Redux</option>
+            <option value="mod4">Oddysee Revamp</option>
+            <option value="mod5">One Drifter's Dream</option>
+            <option value="mod6">The Oddysee Continues</option>
+          </select>
+          <br>
+          <label for="game">Game</label>
+          <select id="game" class="category-select">
+            <option value="oddysee">Abe's Oddysee</option>
+            <option value="exoddus">Abe's Exoddus</option>
+          </select>
+          <br>
+          <label for="saved">Mudokons Saved</label>
+          <input type="number" id="saved" class="amount-input" placeholder="How many have you rescued?">
+          <br>
+          <label for="time">Playtime</label>
+          <input type="time" id="time" class="amount-input" step="1" placeholder="time">
+          <br>
+          <button type="submit" class="button" style="margin-left: 18px;">Add Your Clear</button>
+        </form>
+      </div>
+  
+
+
+      <div class="card_on_top" id="middle_card">
+        
+        <table class="expenses-table">
+          <thead>
+            <tr>
+              <th class="top_adjust">Mod Name</th>
+              <th class="top_adjust">Time</th>
+              <th class="top_adjust">Saved</th>
+              <th class="top_adjust">Player</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>Ectormod</td>
+              <td>01:49:16</td>
+              <td>71</td>
+              <td>Pawlogates</td>
+            </tr>
+
+            <tr>
+              <td>The Oddysee Continues</td>
+              <td>02:19:76</td>
+              <td>69</td>
+              <td>Sita</td>
+            </tr>
+
+            <tr>
+              <td>One Drifter's Dream</td>
+              <td>01:49:16</td>
+              <td>71</td>
+              <td>oddham</td>
+            </tr>
+      
+          </tbody>
+        </table>
+      </div>
+  
+      <div class="card_on_top" id="bottom_card">
+
+        <table class="expenses-table">
+          <thead>
+            <tr>
+              <th class="top_adjust">Mod Name</th>
+              <th class="top_adjust">Time</th>
+              <th class="top_adjust">Saved</th>
+              <th class="top_adjust">Player</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>One Drifter's Dream</td>
+              <td>01:49:16</td>
+              <td>71</td>
+              <td>Pawlogates</td>
+            </tr>
+            
+            <tr>
+              <td>Ectormod</td>
+              <td>01:49:16</td>
+              <td>71</td>
+              <td>Pawlogates</td>
+            </tr>
+
+            <tr>
+              <td>The Oddysee Continues</td>
+              <td>02:19:76</td>
+              <td>71</td>
+              <td>Sita</td>
+            </tr>
+
+            <tr>
+              <td>One Drifter's Dream</td>
+              <td>01:49:16</td>
+              <td>71</td>
+              <td>oddham</td>
+            </tr>
+
+            <tr>
+              <td>Ectormod</td>
+              <td>01:49:16</td>
+              <td>71</td>
+              <td>Pawlogates</td>
+            </tr>
+
+            <tr>
+              <td>The Oddysee Continues</td>
+              <td>02:19:76</td>
+              <td>71</td>
+              <td>Sita</td>
+            </tr>
+
+            <tr>
+              <td>One Drifter's Dream</td>
+              <td>01:49:16</td>
+              <td>71</td>
+              <td>oddham</td>
+            </tr>
+
+            <tr>
+              <td>Ectormod</td>
+              <td>01:49:16</td>
+              <td>71</td>
+              <td>Pawlogates</td>
+            </tr>
+
+            <tr>
+              <td>The Oddysee Continues</td>
+              <td>02:19:76</td>
+              <td>69</td>
+              <td>Sita</td>
+            </tr>
+
+            <tr>
+              <td>One Drifter's Dream</td>
+              <td>01:49:16</td>
+              <td>71</td>
+              <td>oddham</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

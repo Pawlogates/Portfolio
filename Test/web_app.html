@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <link rel="preconnect" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+
+    <link href="//fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Work+Sans&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plansza</title>
+    <link rel="icon" type="image/x-icon" href="icon_name.png">
+
+    <meta name="keywords" content="thing1, thing2"/>
+    <meta name="description" content="description of the website">
+
+
+    <!--css file reference-->
+
+    <link rel="stylesheet" href="web_app.css">
+    
+</head>
+
+<body>
+
+    <a href="index.html" style="font-size: 1vw; color: rgb(255, 255, 255); position: absolute; z-index: 100;">???</a>    
+    <p style="width: 10vw; font-size: 1vw; color: rgb(255, 255, 255); position: absolute; z-index: 100; top: 3vw;">Na razie tylko na pc testuję, więc scalowanie może (będzie) się psuć na telefonach lub wąskich ekranach</p>    
+
+    <div class="main_container">
+
+        <div class="elements_container">
+
+            <div class="header_top">
+                <div class="header_text" style="grid-column: 1; grid-row: 1;"><h1 class="header_text_inside" style="margin-left: 34%;">31</h1></div>
+                <div class="logo" style="grid-column: 2; grid-row: 1 / span 2;"></div>
+                <div class="header_text" style="grid-column: 3; grid-row: 1;"><h1 class="header_text_inside" style="margin-right: 34%;">4/29</h1></div>
+                <div class="barL" style="grid-column: 1; grid-row: 2; margin-right: 13%;"><h1 class="barLRtext">Punktów</h1></div>
+                <div class="barR" style="grid-column: 3; grid-row: 2; margin-left: 13%;"><h1 class="barLRtext">Poziom</h1></div>
+                <div class="header_text logo_text" style="grid-column: 2; grid-row: 1;"><h1 class="header_text_inside" style="bottom: 4vw; letter-spacing: 0.5vw; align-self: center;">grywit</h1></div>
+    
+            </div>
+
+
+            <div class="main_overlay"></div>
+            <!--<div class="main_overlay2"></div>-->
+
+            
+            <div class="element_box" style="grid-column: 3; grid-row: 5;">
+                <div class="button_a" id="btn_BADGES"></div>
+                <!--<div class="button_a_text">1</div>-->
+                <div class="button_a_icon" style="background-image: url(images/ikony/chat-4-256.png);"></div>
+                <h1 class="btn_description">Odznaki</h1>
+                    
+            </div>
+
+            <div class="element_box" style="grid-column: 6; grid-row: 5;">
+                <div class="button_a" id="btn_TASKS"></div>
+                <!--<h1 class="button_a_text">2</h1>-->
+                <div class="button_a_icon" style="background-image: url(images/ikony/icon_car.png);"></div>
+                <h1 class="btn_description">Zadania</h1>
+
+            </div>
+
+            <div class="element_box" style="grid-column: 9; grid-row: 5;">
+                <div class="button_a" id="btn_WORKERS"></div>
+                <!--<h1 class="button_a_text">3</h1>-->
+                <div class="button_a_icon" style="background-image: url(images/ikony/gear-2-256.png); filter: invert(10);"></div>
+                <h1 class="btn_description">ZNAJOMI</h1>
+                    
+            </div>
+
+            <div class="element_box" style="grid-column: 12; grid-row: 5;">
+                <div class="button_a" id="btn_MESSAGES"></div>
+                <!--<div class="button_a_text">1</div>-->
+                <div class="button_a_icon" style="background-image: url(images/ikony/email-12-256.png); filter: invert(10);"></div>
+                <h1 class="btn_description">WIADOMOŚCI</h1>
+   
+            </div>
+
+            <div class="element_box" style="grid-column: 15; grid-row: 5;">
+                <div class="button_a" id="btn_EVENTS"></div>
+                <!--<h1 class="button_a_text">2</h1>-->
+                <div class="button_a_icon" style="background-image: url(images/ikony/report-3-256.png); filter: invert(10);"></div>
+                <h1 class="btn_description">Grafik</h1>
+
+            </div>
+
+            <div class="element_box" style="grid-column: 18; grid-row: 5;">
+                <div class="button_a" id="btn_ACTIVITy"></div>
+                <!--<h1 class="button_a_text">3</h1>-->
+                <div class="button_a_icon" style="background-image: url(images/ikony/edit-5-256.png); filter: invert(10);"></div>
+                <h1 class="btn_description">Aktywność</h1>
+
+            </div>
+
+            <div class="element_box" style="grid-column: 3; grid-row: 8;">
+                <div class="button_a" id="btn_FEEDBACK"></div>
+                <!--<h1 class="button_a_text">3</h1>-->
+                <div class="button_a_icon" style="background-image: url(images/ikony/gear-256.png); filter: invert(10);"></div>
+                <h1 class="btn_description">Feedback</h1>
+
+            </div>
+
+            <div class="element_box" style="grid-column: 6; grid-row: 8;">
+                <div class="button_a" id="btn_GAME1"></div>
+                <!--<h1 class="button_a_text">3</h1>-->
+                <div class="button_a_icon" style="background-image: url(images/ikony/info-2-256.png); filter: invert(10);"></div>
+                <h1 class="btn_description">Gra1</h1>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <div class="element_box" style="grid-column: 12; grid-row: 6;">
+                <div class="button_b" id="btn1b"></div>
+                <div class="button_b_icon"></div>
+                    
+            </div>
+            
+
+            <div class="element_box" style="grid-column: 15; grid-row: 6; transform: translateY(0vw); animation: 5s updownloop ease-in-out infinite;">
+                <div class="button_c" id="btn1c"></div>
+                <div class="button_c_icon"></div>
+                
+                
+            </div>
+
+            <div class="textbox" id="textbox1">
+                nienawidze git'a Tutaj tekst jakis bedzie<br>
+                Tutaj tekst jakis bedzie tu tez w sumie<br>
+                i tu tez
+            </div>
+            
+
+            <!--
+
+            <div class="element_box" style="grid-column: 6 / span 3; grid-row: 4 / span 4;">
+
+                <div class="moveup1box">
+                <div class="moveup1">
+                    <div class="upbg1a"></div>
+                    <div class="upbg1b"></div>
+                    <div class="upbg1c"></div>
+                    <div class="upbg1d"></div>
+
+
+
+
+                </div>
+                </div>
+
+
+
+            </div>
+
+            -->
+
+
+
+            <div class="item_moveup">
+                <img src="images/item1_moveup.png" id="item_moveup1">
+
+            </div>
+
+
+            
+
+            <div class="element_box" style="grid-column: 15 / span 3; grid-row: 8 / span 3;">
+
+                <div class="moveup1box">
+                <div class="moveup1 m1fix" style="transform: translate(-3vw, 0vw) scale(25%); animation-duration: 2s; animation-delay: 0.05s; animation-timing-function: cubic-bezier(.69,-1.07,.4,2.05);">
+                    <div class="upbg1a"></div>
+                    <div class="upbg1b"></div>
+                    <div class="upbg1c"></div>
+                    <div class="upbg1d"></div>
+                </div>
+
+                <div class="moveup1 m2fix" style="transform: translate(-5vw, 0vw) scale(25%); animation-duration: 2s; animation-delay: 0s; animation-timing-function: cubic-bezier(.69,-1.07,.4,2.05);">
+                    <div class="upbg1a"></div>
+                    <div class="upbg1b"></div>
+                    <div class="upbg1c"></div>
+                    <div class="upbg1d"></div>
+                </div>
+
+                <div class="moveup1 m3fix" style="transform: translate(-1vw, 0vw) scale(25%); animation-duration: 2s; animation-delay: 0.1s; animation-timing-function: cubic-bezier(.69,-1.07,.4,2.05);">
+                    <div class="upbg1a"></div>
+                    <div class="upbg1b"></div>
+                    <div class="upbg1c"></div>
+                    <div class="upbg1d"></div>
+                </div>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+        <!-- SLIDERS below -->
+
+        <div class="slider BADGESslider" id="slider_BADGES">
+
+            <div class="section_type1 badge_description">
+                <div class="inside_section">
+                    <h1 class="text_top">Kliknij odznake zeby zobaczyc opis itp (na razie tylko opis :c)</h1>
+                    <p class="text_main" id="badge_description_txt">Mozna przewijac odznaki ale nie widac paska (specjalnie nie widac go) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+
+                </div>
+            </div>
+
+            <div class="section_type2" style="background-image: url(images/bg_a2.png); left: 16vw">
+                <div class="inside_sectionGRID">
+
+                    <button onclick="changeBadgeDescription(b1d)" class="badge" id="badge1" style="background-image: url(images/ikony/none); background-size: 100%;">Kliknij</button>
+                    <button onclick="changeBadgeDescription(b2d)" class="badge" id="badge1" style="background-image: url(images/ikony/none); background-size: 100%;">mnie</button>
+                    <button onclick="changeBadgeDescription(b3d)" class="badge" id="badge1" style="background-image: url(images/ikony/none); background-size: 100%;">tu</button>
+                    <button onclick="changeBadgeDescription(b4d)" class="badge" id="badge1" style="background-image: url(images/ikony/icon_car.png); background-size: 100%;"></button>
+
+
+
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="slider TASKSslider" id="slider_TASKS" style="background-color: rgba(0, 123, 255, 0.386); background-image: url(images/bg_a2.png);">
+
+            <div class="section_type1 task_list" style="background-color: rgba(255, 0, 0, 0.906); box-shadow: inset 0 0 3vw rgba(0, 0, 0, 0.406);">
+                <div class="inside_section">
+                    <h1 class="text_top">NAJBLIŻSZE TERMINY</h1>
+
+                    <p class="text_main">Zadanie 1: h - do 13:00 czw. (ZROBIONE)</p>
+                    <p class="text_main">Zadanie 2: h - do 2:00 pon. (NIE ZROBIONE)</p>
+
+                    <p class="text_main"><span id="taskName1">zrob cos</span> <span id="taskDeadline1">do wtedy</span> <div class="is_taskDone" id="taskDone1"></div></p>
+
+
+                </div>
+            </div>
+
+            <div class="section_type2 task_list2" style="background-image: url(images/scroll_transparent.png); background-size: 100%; background-position: center; rotate: -90deg;
+            background-repeat: no-repeat !important; background-color: rgba(0, 92, 185, 0.429);">
+
+                <div class="mouse_icon"></div>
+
+                <div class="inside_section inside_section_task_list2" style="rotate: 90deg;">
+
+                    <h1 class="text_top text_top_task_list">ZADANIA</h1>
+
+                    <p class="text_main text_task_list">Zadanie 1: h - do 13:00 czw. (ZROBIONE)</p>
+                    <p class="text_main text_task_list">Zadanie 2: h - do 2:00 pon. (NIE ZROBIONE)</p>
+
+                    <p class="text_main text_task_list"><span id="taskName1">zrob cos</span> <span id="taskDeadline1">do wtedy</span> <div class="is_taskDone" id="taskDone1"></div></p>
+                    <p class="text_main text_task_list"><span id="taskName1">zrob cos</span> <span id="taskDeadline1">do wtedy</span> <div class="is_taskDone" id="taskDone1"></div></p>
+                    <p class="text_main text_task_list"><span id="taskName1">zrob cos</span> <span id="taskDeadline1">do wtedy</span> <div class="is_taskDone" id="taskDone1"></div></p>
+                    <p class="text_main text_task_list"><span id="taskName1">zrob cos</span> <span id="taskDeadline1">do wtedy</span> <div class="is_taskDone" id="taskDone1"></div></p>
+                    <p class="text_main text_task_list"><span id="taskName1">zrob cos</span> <span id="taskDeadline1">do wtedy</span> <div class="is_taskDone" id="taskDone1"></div></p>
+                    <p class="text_main text_task_list"><span id="taskName1">zrob cos</span> <span id="taskDeadline1">do wtedy</span> <div class="is_taskDone" id="taskDone1"></div></p>
+                    <p class="text_main text_task_list"><span id="taskName1">zrob cos</span> <span id="taskDeadline1">do wtedy</span> <div class="is_taskDone" id="taskDone1"></div></p>
+                    <p class="text_main text_task_list"><span id="taskName1">zrob cos</span> <span id="taskDeadline1">do wtedy</span> <div class="is_taskDone" id="taskDone1"></div></p>
+                    <p class="text_main text_task_list"><span id="taskName1">zrob cos</span> <span id="taskDeadline1">do wtedy</span> <div class="is_taskDone" id="taskDone1"></div></p>
+                    <br>
+                    <br>
+                    <br>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="slider WORKERSslider" id="slider_WORKERS" style="background-image: url(images/wp9.png);">
+
+            <div class="section_type1 workers_info">
+                <div class="inside_section">
+                    <h1 class="text_top">NAGŁÓWEK</h1>
+                    <p class="text_main">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+
+                </div>
+            </div>
+
+            <div class="section_type2 workers_list" style="background-image: url(images/wp4.png);">
+
+
+                <div class="workers_listItem">
+                    <div class="workers_profilePicture" id="workers_profilePicture1" style="background-color: blue;"></div>
+                    <div class="workers_name" id="name1" style="background-color: blue;">null</div>
+                    <div class="workers_status" id="status1"> null</div>
+                    <div class="send_message" id="send_message1"></div>
+                </div>
+
+                <div class="workers_listItem">
+                    <div class="workers_profilePicture" id="workers_profilePicture2"></div>
+                    <div class="workers_name" id="name2">null</div>
+                    <div class="workers_status" id="status2"> null</div>
+                    <div class="send_message" id="send_message2"></div>
+                </div>
+
+                <div class="workers_listItem">
+                    <div class="workers_profilePicture" id="workers_profilePicture3"></div>
+                    <div class="workers_name" id="name3">null</div>
+                    <div class="workers_status" id="status3"> null</div>
+                    <div class="send_message" id="send_message3"></div>
+                </div>
+
+                <div class="workers_listItem">
+                    <div class="workers_profilePicture" id="profilePicture4"></div>
+                    <div class="workers_name" id="name4">null</div>
+                    <div class="workers_status" id="status4"> null</div>
+                    <div class="send_message" id="send_message4"></div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="closer" id="closer_BADGES"></div>
+        <div class="closer" id="closer_TASKS"></div>
+        <div class="closer" id="closer_WORKERS"></div>
+
+
+
+
+
+
+        <div class="start_msg">
+            <p class="start_msg_text">Tutaj tekst jakis bedzie</p>
+            <div class="closer" id="start_msg_closer"></div>
+        </div>
+
+        <div class="bg_cover"></div>
+
+
+
+    </div>
+
+
+
+    <script src="web_app.js"></script>
+    
+</body>
+</html>

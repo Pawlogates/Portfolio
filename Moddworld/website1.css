@@ -1,0 +1,2399 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.button {
+  border: none;
+      display: inline-flex;
+      outline-color: rgb(255, 251, 0);
+      border-radius: 25px;
+  background-color: rgb(255, 136, 57);
+  outline-width: 3px;
+  outline-style: solid;
+  height: 80%;
+  width: 80%;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  justify-items: center;
+ 
+
+}
+
+.odd {
+  color: #ff480056;
+  margin: 0px;
+  text-align: center;
+  font-size: 80px;
+  font-family: 'Roboto Condensed', sans-serif;
+  -webkit-text-stroke-color: rgba(255, 136, 0, 0.158);
+  -webkit-text-stroke-width: 5px;
+  text-shadow: 2px 2px 2px #ffdf2a;
+  transition-duration: 1s;
+  transition: opacity 1s 0.5s;
+}
+
+.bg_shadow {
+
+box-shadow: inset rgba(0, 0, 0, 0.65) 0px 0px 200px 100px;
+height: 100%;
+width: 100%;
+position: fixed;
+bottom: 0px;
+z-index: 10;
+pointer-events: none;
+
+}
+
+.bg_shadow:before, .bg_shadow:after {
+
+  content: " ";
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+ 
+}
+
+.bg_shadow:before {
+  box-shadow: rgb(0, 0, 0) -200px 0 150px -100px inset;
+  right: 0px;
+}
+
+.bg_shadow:after {
+  box-shadow: rgb(0, 0, 0) 200px 0 150px -100px inset;
+  left: 0px;
+}
+
+  
+.roz:hover {
+  border-radius: 7px;
+  background: radial-gradient(ellipse at top, #e6ce64, transparent),
+  radial-gradient(ellipse at bottom, #ffc400, transparent);
+  outline: rgb(255, 0, 0) outset 7px;
+  border-color: rgb(255, 0, 0);
+  border-width: 3px;
+  width: 300px;
+  height: 500px;
+  margin: 25px;
+  margin-right: 150px;
+  transition-duration: 0.7s;
+
+  transform:rotate(35deg)
+}
+
+.button1 {
+  border-radius: 7px;
+  background-color: rgb(253, 255, 153);
+  outline: darkred outset 7px;
+  border-color: rgb(255, 0, 0);
+  border-width: 3px;
+  width: 300px;
+  height: 50px;
+  margin: 25px;
+  margin-right: 15px;
+
+  transition: 0.3s ease-out;
+
+  animation: 3s linear anim;
+  animation-play-state: paused;
+  }
+
+  
+
+  .button2 {
+  
+  
+
+
+background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  border-width: 3px;
+  width: 300px;
+  height: 50px;
+  margin: 25px;
+  margin-right: 15px;
+  }
+
+  .animtest {
+  animation: 1s linear animt;
+  }
+  
+  @-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+  
+  
+  .switcher1 {
+
+    background: rgb(165, 255, 187);
+ 
+    transition-duration: 0.7s;
+    
+  }
+
+
+  .switcher2 {
+background: rgb(165, 255, 187);
+color:#00a2ff;
+transition-duration: 0.7s;
+  }
+
+
+.divs {
+  
+background-image: linear-gradient( to bottom,  rgb(145, 0, 0), 50%, rgba(0, 0, 0, 0.397));
+border-style: outset;
+border-color:#ffe96a;
+border-width: 1px;
+height: 350px;
+width: 600px;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 30px;
+font-weight: 300;
+margin: auto;
+margin-top: 80px;
+margin-bottom: 100px;
+animation: bgmovement 2s;
+}
+
+p{
+
+font-family: 'Fjalla One', sans-serif;
+
+}
+
+#object-position-1 {
+object-position: -250px;
+height: 200px;
+width: 400px;
+}
+
+
+ .bg {
+  height: 450%;
+  width: 150%;
+  font-family: 'Roboto Condensed', sans-serif;
+  background: rgb(107, 0, 0);
+  color:#000000;
+  background-image: url(moddworld_graphics/Map_bg.jpg);
+  background-size: 6000px;
+  animation: bgmovement 1200s infinite;
+  position: fixed;
+  margin: 0px;
+  top: 0px;
+  background-attachment: fixed;
+  z-index: -5;
+transition-duration: 1s;
+transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06)(0.075, 0.82, 0.165, 1);
+background-repeat: repeat;
+
+}
+
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background: rgb(107, 0, 0);
+  color:#000000;
+  transition-duration: 0.7s;
+  margin: 0px;
+}
+
+
+@keyframes bgmovement {
+
+
+0% {background-position: 0% 0%;
+  animation-timing-function: linear;} 
+85% {background-position: 1000% 0%;
+}
+100% {background-position: 0% 0%;
+  }
+  
+
+}
+
+
+
+.parallax {
+  height: 1000px;
+  width: 80%;
+	margin: auto;
+	background-attachment: unset;
+  background-position: center;
+	background-repeat: repeat;
+	background-size: 200%;
+  z-index: 3;
+  position: relative;
+  outline: 20px outset rgba(128, 126, 0, 0.363);
+}
+
+
+.parallaxbreak {
+
+width: 100%;
+height: 600px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.midsection1{
+  
+display: block !important;
+margin: auto;
+background-size: 100%;
+background-image: none;
+background-color: rgba(0, 44, 67, 0.781);
+shape-outside: ellipse(130px 140px at 20% 20%);
+box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.377) inset;
+border-radius: 25px;
+outline: 7px outset rgba(255, 191, 0, 0.834);
+border: 5px rgba(255, 170, 0, 0.652) outset;
+height: auto;
+transition-duration: 1s;
+
+}
+
+.midsection2{
+
+background-color: rgba(59, 124, 150, 0.781);
+shape-outside: ellipse(130px 140px at 20% 20%);
+box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.377) inset;
+border-radius: 25px;
+outline: 15px outset rgba(255, 253, 108, 0.308);
+width: 700px;
+height: 1200px;
+transition-duration: 1s;
+}
+
+.scroll {
+
+position: relative;
+height: 60%;
+margin: auto;
+display: block;
+top: 5%;
+}
+
+.CUSTOMLEVELSTEXT {
+
+  font-size: 60px;
+  color: #ffffff;
+  font-weight: bolder;
+  text-align: center;
+  display: block;
+  
+
+  font-family: 'Fjalla One', sans-serif;
+  padding-bottom: 50px;
+
+  background-image: url(moddworld_graphics/sign.png) ;
+  background-size: 100%;
+  height: 200px;
+  width: 480px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+animation: mods_arrow 3s infinite cubic-bezier(.54,-2.24,1,1);
+position: relative;
+
+}
+
+@keyframes mods_arrow {
+
+0% {
+
+bottom: 10px;
+
+
+}
+
+50% {
+
+bottom: 0px;
+
+}
+
+100% {
+
+  bottom: 10px;
+
+}
+
+}
+
+
+
+
+
+
+.textlook {
+
+color: rgba(121, 189, 104, 0.897);
+}
+
+.textlook2 {
+
+  color: rgba(118, 192, 186, 0.952);
+  }
+
+.presser1 {
+
+border-width: 0px;
+display: block;
+height: 50px;
+width: 150px;
+
+background-color: none;
+background-image: linear-gradient(170deg, rgb(0,0,0), rgba(255, 0, 0, 90%));
+outline: none !important;
+color: black;
+text-decoration: none;
+text-align: center;
+background-image: url(moddworld_graphics/mod_info_bg.png);
+background-size: 100% 100%;
+position: relative;
+top: 4px;
+border-radius: 1px;
+outline-style: ridge;
+transition-duration: 1.5s;
+overflow: hidden;
+filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+shape-outside: url(moddworld_graphics/mod_info_bg.png);
+margin-left: 320px;
+
+}
+
+.presser1:hover {
+filter: hue-rotate(-30deg) drop-shadow(0px 0px 5px rgb(0, 0, 0));
+transition-duration: 0s !important;
+transition-delay: 0s !important;
+color: white;
+scale: 105%;
+}
+
+.inside_presser {
+font-size: 15px;
+text-shadow: 0 0 10px rgba(0, 0, 0, 0.785);
+}
+
+
+.images {
+
+    opacity: 20%;
+
+
+}
+
+
+.featured {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-text-stroke-color: rgba(255, 0, 0, 0.452);
+  -webkit-text-stroke-width: 2px;
+color:#f6d43c;
+font-size: 35px;
+text-align: center;
+font-family: 'Anton', sans-serif;
+text-shadow: rgba(0, 0, 0, 0.692) 0px 0px 15px;
+}
+
+#top_f {
+
+font-size: 50px;
+
+}
+
+.featuredmod1 {
+  top: -190px;
+  position: relative;
+  pointer-events: none;
+  transition-duration: 0.7s;
+  text-shadow: #000000 -3px 5px;
+
+  }
+
+  .featuredmod2 {
+    top: -190px;
+    position: relative;
+    pointer-events: none;
+    transition-duration: 0.7s;
+    text-shadow: #000000 -3px 5px;
+  
+    }
+
+    .featuredmod3 {
+      top: -190px;
+      position: relative;
+      pointer-events: none;
+      transition-duration: 0.7s;
+      text-shadow: #000000 -3px 5px;
+    
+      }
+
+.typinganim {
+
+    width: 22ch;
+    animation: typing 2s steps(22), effect .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+@keyframes typing {
+from {
+  width: 0;
+}
+}
+  
+@keyframes effect {
+50% {
+  border-color: transparent;
+}
+}
+
+
+.altfeatured {
+  font-size: 70px;
+  margin-top: 0px;
+  text-decoration: underline;
+
+}
+
+.divupper {
+
+-webkit-text-stroke: 55px, red;
+position: relative;
+top: 20px;
+height: auto;
+margin: auto;
+background-color: rgba(51, 11, 11, 0.884);  
+background-repeat: no-repeat;
+border: 7px solid rgb(158, 16, 16);
+border-top: 10px solid #db1e1e;
+scroll-behavior: smooth;
+text-align: center;
+width: max-content;
+padding-left: 90px;
+padding-right: 90px;
+
+
+}
+
+
+.mod1:hover {
+
+height: 500px;
+transition: opacity 1s, height 0.7s ease-out, width 1s ease-in-out;
+background-position: top 0% left 0%;
+background-size: 20px 20px;
+background-image: none;
+background-size: 2000%;
+background-position: top 0% left 0%;
+width: 900px;
+transition-delay: 0.2s;
+}
+
+
+@keyframes fadein{
+  0% { opacity:1; }
+  66% { opacity:1; }
+  100% { opacity:0; }
+}
+
+@keyframes mod1m {
+  0% {background-position: 32.5% 18.7%;
+    animation-timing-function: linear;} 
+  40% {background-position: 90% 18.7%;
+    animation-timing-function: steps(1, end);} 
+  40% {background-position: 50% 33.7%;
+    animation-timing-function: linear;}
+  65% {background-position: 90% 33.7%;
+  animation-timing-function: steps(1, end);}
+  65% {background-position: 0% 50%;
+    animation-timing-function: ease-out;}
+  100% {background-position: 100% 97%; 
+    animation-timing-function: steps(1, end);}
+
+
+  
+}
+
+@keyframes mod2m {
+  0% {background-position: 125% 23%;
+    animation-timing-function: ease-out;} 
+  40% {background-position: 26.5% 23%;
+    animation-timing-function: steps(1, end);} 
+  40% {background-position: 26.5% 23%;
+    animation-timing-function: ease-in-out;}
+  65% {background-position: 26.5% 115%;
+  animation-timing-function: steps(1, end);}
+  65% {background-position: -3% 79.5%;
+    animation-timing-function: ease-out;}
+  100% {background-position: 100% 79.5%; 
+    animation-timing-function: steps(1, end);}
+
+
+  
+}
+
+@keyframes mod3m {
+  0% {background-position: 100% -7%;
+    animation-timing-function: ease-out;} 
+  40% {background-position: -15% 35%;
+    animation-timing-function: steps(1, end);} 
+  40% {background-position: 87% 50%;
+    animation-timing-function: ease-in-out;}
+  65% {background-position: -5% 50%;
+  animation-timing-function: steps(1, end);}
+  65% {background-position: -15% 85%;
+    animation-timing-function: ease-out;}
+  100% {background-position: 95% 85%; 
+    animation-timing-function: steps(1, end);}
+
+
+  
+}
+
+@keyframes mod4m {
+  0% {background-position: 100% 10%;
+    animation-timing-function: ease-out;} 
+  20% {background-position: 0% 35%;} 
+  30% {background-position: 87% 50%;
+    animation-timing-function: ease-in-out;}
+  65% {background-position: 0% 30%;}
+  75% {background-position: 15% 85%;
+    animation-timing-function: ease-out;}
+  100% {background-position: 85% 100%;}
+
+
+  
+}
+
+
+@keyframes mod1o {
+35% {opacity: 100%;}
+  40% {opacity: 0%}
+}
+
+.mod1img:hover + .featuredmod1 {
+
+top: -135%;
+position: relative;
+transition-delay: 0.2s;
+}
+
+#mod2img:hover + .featuredmod2 {
+
+  top: -135%;
+  position: relative;
+  transition-delay: 0.2s;
+
+  }
+
+  #mod3img:hover + .featuredmod3 {
+
+    top: -135%;
+    position: relative;
+    transition-delay: 0.2s;
+    }
+
+    #mod4img:hover + .featuredmod2 {
+
+      top: -135%;
+      position: relative;
+      transition-delay: 0.2s;
+    
+      }
+
+      
+.block {
+
+background-color: red;
+
+}
+
+
+  
+
+
+#anotherbtn{
+  position:fixed;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:radial-gradient(at 30% 30%,#0000,#000a) red;
+  left:10px;
+  top:200px;
+  animation:
+    x 2s ease-in-out alternate infinite,
+    y 2s ease-in-out alternate infinite;
+}
+
+
+@keyframes x {
+   to {
+     left:200px;
+   }
+}
+@keyframes y {
+   to {
+     top:100px;
+   }
+}
+
+
+
+
+
+
+.mod1img:hover {
+
+ 
+  height: 500px;
+  background-position: top 0% left 0%;
+  background-image: url(moddworld_graphics/mod1img.jpg);
+  background-size: 350%;
+  background-position: top 0% left 0%;
+  width: 900px;
+  animation: mod1m 30s infinite;
+  animation-delay: 1s;
+  transition: opacity 1s, height 0.5s ease-out, width 0.7s ease-in-out, background-size 2.5s ease-in-out;
+  transition-delay: 0.2s;
+
+}
+
+
+
+.mod1img{
+
+  background-image: url(moddworld_graphics/mod1img.jpg);
+  background-size: 1350%;
+  background-position: top 0% left 0%;
+  width: 300px;
+  height: 200px;
+  border: 3px solid black;
+  transition: opacity 1s, height 0.5s ease-out, width 0.7s ease-in-out, background-size 0.7s;
+  position: relative;
+  top: -53px;
+  right: 3px;
+  animation: mod1m 30s infinite;
+  pointer-events: all;
+  animation-delay: 1s;
+
+}
+
+#mod2img {
+
+background-image: url(moddworld_graphics/mod2img.jpg);
+background-size: 500%;
+background-position: top 0% left 0%;
+border: 3px solid black;
+transition: opacity 1s, height 0.5s ease-out, width 0.7s ease-in-out, background-size 0.7s;
+position: relative;
+top: -53px;
+right: 3px;
+animation: mod2m 20s infinite;
+pointer-events: all;
+
+
+}
+
+#mod3img {
+ 
+background-image: url(moddworld_graphics/mod3img.jpg);
+background-size: 700%;
+background-position: top 0% left 0%;
+border: 3px solid black;
+transition: opacity 1s, height 0.5s ease-out, width 0.7s ease-in-out, background-size 0.7s;
+position: relative;
+top: -53px;
+right: 3px;
+animation: mod3m 30s infinite;
+pointer-events: all;
+  
+  
+  }
+
+  #mod4img {
+
+    background-image: url(moddworld_graphics/mod4img.jpg);
+    background-size: 250%;
+    background-position: top 0% left 0%;
+    border: 3px solid black;
+    position: relative;
+    top: -53px;
+    right: 3px;
+    animation: mod4m 40s infinite backwards;
+    pointer-events: all;
+    
+    
+    }
+
+#mod2img:hover {
+
+ 
+    height: 500px;
+    background-position: top 0% left 0%;
+    background-size: 220%;
+
+    width: 900px;
+    animation: mod2m 20s infinite;
+
+    transition: opacity 1s, height 0.5s ease-out, width 0.7s ease-in-out, background-size 1s ease-in-out;
+    transition-delay: 0.2s;
+
+  }  
+
+  #mod3img:hover {
+
+ 
+    height: 500px;
+    background-position: top 0% left 0%;
+    background-size: 300%;
+
+    width: 900px;
+    animation: mod3m 30s infinite;
+
+    transition: opacity 1s, height 0.5s ease-out, width 0.7s ease-in-out, background-size 1s ease-in-out;
+    transition-delay: 0.2s;
+
+  }
+
+  #mod4img:hover {
+
+ 
+    height: 500px;
+    background-position: top 0% left 0%;
+    background-size: 140%;
+
+    width: 900px;
+    animation: mod4m 40s infinite backwards;
+
+    transition: opacity 1s, height 0.5s ease-out, width 0.7s ease-in-out, background-size 1s ease-in-out;
+    transition-delay: 0.2s;
+
+  }  
+
+
+
+.btn {
+  position: relative;
+  top: 52%;
+  z-index: 1;
+  border-radius: 100px;
+  height: 0px;
+  width: 0px;
+  margin-right: 0%;
+  margin-left: 0%;
+  display: inline-block;
+  opacity: 0%;
+  transition: height 0.5s, width 0.5s, rotate 0.5s ease-in, opacity 0.3s, margin-left 0.5s 0.5s, margin-right 0.5s 0.5s;
+background-image: url(moddworld_graphics/owbtn.png);
+background-size: contain;
+background-position: center;
+padding: 0px;
+box-shadow: 0px 0px 30px 15px #000000a2, 0px 0px 15px 1px #ff2222;
+background-size: 101%;
+background-color: rgba(255, 0, 0, 0);
+border: none;
+pointer-events: none;
+scale: 100%;
+
+}
+
+
+  
+#mod1:hover {
+  transition-delay: 0.2s;
+}
+
+#mod1 {
+  transition: opacity 1s, height 0.5s ease-out, width 0.7s ease-in-out, background-size 2.5s;
+  pointer-events: none;
+  margin-top: 100px;
+}
+
+#mod2:hover {
+  transition-delay: 0.2s;
+}
+
+#mod2 {
+  transition: opacity 1s, height 0.5s ease-out, width 0.7s ease-in-out, background-size 2.5s;
+  pointer-events: none;
+}
+
+#mod3:hover {
+  transition-delay: 0.2s;
+}
+
+#mod3 {
+  transition: opacity 1s, height 0.5s ease-out, width 0.7s ease-in-out, background-size 2.5s;
+  pointer-events: none;
+  
+}
+
+
+.mod1img:hover > .btn  { 
+  opacity: 100%;
+  transition: top 0.5s ease-in; 
+  margin-left: 5%; 
+  margin-right: 15%;
+  height: 100px;
+  width: 100px;
+  transition-delay: 0.2s;
+  background-position: center;
+  pointer-events: all;
+  transition: rotate 0.8s cubic-bezier(0,1.95,.11,1) 0.3s, opacity 1s ease-in 0.7s, margin-left 0.5s 0.7s, margin-right 0.5s 0.7s;
+  rotate: 360deg;
+  
+
+  }
+
+  .btnbg {
+
+    position:absolute;
+    margin:auto;
+    width: 100%;
+    height: 40%;
+    background-color: rgb(255, 115, 0);
+    bottom: 8%;
+    opacity: 0%;
+
+  }
+
+  .mod1img:hover > .btn_right  { 
+    margin-top: 5.5%;
+    margin-left: 21%; 
+    margin-right: 5%;
+    
+  }
+
+  .mod1img:hover > .btnbg {
+
+    opacity: 15%;
+    transition: opacity 0.7s 0.5s;
+}
+
+
+.btn_p {
+
+background-image: url(moddworld_graphics/back_btn.png) !important;
+
+}
+
+.creator_text {
+
+font-size: 17px;
+color: white;
+-webkit-text-stroke: 0.5px rgba(179, 0, 255, 0.412);
+position: absolute;
+display: block;
+left: 0;
+right: 0;
+top: 10px;
+}
+
+
+.mod1img:hover > #btnmod1 {
+ 
+position: relative;
+height: 130px;
+width: 225px;
+border-radius: 25px;
+transition-duration: 1s;
+transition-delay: 0.3s;
+}
+
+#btnmod1 {
+
+  border-radius: 25px;
+  top: 56%; 
+  background-color: rgb(255, 187, 0);
+  background-image: url(moddworld_graphics/download_btn.png);
+  box-shadow: inset 0px 0px 15px 15px rgba(0, 0, 0, 0.411), 0px 0px 30px 15px #000000a2, 0px 0px 15px 1px #ff2222;
+border: #9c0000 7px solid;
+border-left-color: #5f0000;
+border-bottom-color: #5f0000;
+z-index: 13;
+margin: 0px;
+left: 30px;
+
+transition: scale 0s ease-in-out, height 0.5s, width 0.5s, opacity 0.3s ease-out, rotate 1s;
+
+width: 0px;
+height: 0px;
+
+}
+
+#btnmod1a {
+
+border-radius: 25px;
+top: 60.25%; 
+background-color: rgb(187, 69, 0);
+background-image: none;
+box-shadow: inset 0px 0px 15px 15px rgba(0, 0, 0, 0.411), 0px 0px 30px 15px #000000a2, 0px 0px 15px 1px #ff2222;
+border: #9c0000 7px solid;
+border-left-color: #5f0000;
+border-bottom-color: #5f0000;
+position: absolute;
+right: 90px;
+background-size: 60%;
+background-repeat: no-repeat;
+background-position: left;
+width: 0px;
+height: 0px;
+pointer-events: none;
+}
+
+.mod1img:hover > #btnmod1a {
+
+width: 450px;
+height: 115px;
+transition: height 0s 0s, width 0s 0s, rotate 0.7s 0.3s, opacity 2.5s 0.5s, top 1s, background-color 0s;
+pointer-events: all;
+}
+
+#btnmod2 {
+
+  border-radius: 25px;
+  top: 58.5%; 
+  background-color: rgb(255, 187, 0);
+  background-image: url(moddworld_graphics/main_page_button.png);
+  box-shadow: inset 0px 0px 15px 15px rgba(0, 0, 0, 0.411), 0px 0px 30px 15px #000000a2, 0px 0px 15px 1px #ff2222;
+border: #9c0000 7px solid;
+border-left-color: #5f0000;
+border-bottom-color: #5f0000;
+
+}
+
+#btnmod3 {
+
+  border-radius: 25px;
+  top: 58.5%; 
+  background-color: rgb(255, 187, 0);
+  background-image: url(moddworld_graphics/main_page_button.png);
+  box-shadow: inset 0px 0px 15px 15px rgba(0, 0, 0, 0.411), 0px 0px 30px 15px #000000a2, 0px 0px 15px 1px #ff2222;
+border: #9c0000 7px solid;
+border-left-color: #5f0000;
+border-bottom-color: #5f0000;
+
+}
+          
+
+#nohover {
+
+  pointer-events: none;
+
+}
+
+.more_info {
+
+width: 50%;
+height: 100%;
+object-fit: contain;
+object-position: left;
+
+}
+
+.more_info2 {
+
+  width: 50%;
+  height: 100%;
+  object-fit: contain;
+  object-position: 93% 0%;
+  
+  }
+
+.more_info_bg {
+
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0%;
+left: 0;
+opacity: 0;
+shape-outside: url(moddworld_graphics/scroll_more_info.png);
+filter: drop-shadow(5px 5px 0px rgb(0, 0, 0));
+pointer-events: none;
+}
+
+
+.info_over_scroll {
+
+height: 0;
+width: 0;
+pointer-events: none;
+opacity: 0%;
+z-index: 25;
+position: absolute;
+background-size: cover;
+display: block;
+}
+
+.over_scroll_text {
+
+  transition-duration: 0s;
+  transition-delay: 0s;
+  z-index: 30;
+  position: absolute;
+  opacity: 0;
+
+  border-radius: 5px;
+  top: 50%;
+  margin: auto;
+  text-align: center;
+  font-size: 15px;
+  pointer-events: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+
+background-image: url(moddworld_graphics/mod_info_bg.png);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+
+
+.mod1 {
+
+background-size: 2000%;
+background-position: top 0% left 0%;
+width: 300px;
+outline: 6px solid black;
+height: 200px;
+transition: opacity 1s, height 0.5s ease-out, width 0.7s ease-in-out, background-size 0.7s;
+background-color: transparent;
+bottom: 6px;
+position: relative;
+transition-delay: 0.2s;
+
+}
+
+
+.gridlevels {
+  width: 100%;
+  display: inline-grid;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: span 1;
+
+
+}
+
+.ingridlevels {
+background-color: rgb(255, 174, 0);
+border: 3px solid black;
+outline-width: 0;
+outline-color: #99f;
+width: 400px;
+margin: auto;
+margin-top: 50px;
+margin-bottom: 50px;
+height: 120px;
+
+}
+
+.first {
+    width: 100%;
+    height: 100px;
+    background: #ccc;
+}
+
+.second {
+    width: 100%;
+    height: 100px;
+    background: #999;
+}
+
+
+
+#section1 {
+
+    width: 450px;
+    height: 55px;
+    background-color: rgba(230, 107, 255, 0.237);
+    font-size: 22px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: unset;
+    margin: auto;
+    text-align: center;
+   border-top-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   outline: groove rgba(208, 255, 0, 0.267) 3px;
+   transition-duration: 0.3s;
+   box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.342) inset;
+  }
+  
+  #section2:hover {
+
+
+    background-color: rgb(0, 41, 10);
+    transform-style: flat;
+    transition-duration: 0s;
+    transition-timing-function: ease-in-out;
+  }
+
+  #section1:hover {
+
+
+    background-color: rgb(0, 21, 41);
+    transform-style: flat;
+    transition-duration: 0s;
+    transition-timing-function: ease-in-out;
+    
+      }
+
+  #section2 {
+
+    outline: groove rgba(166, 255, 0, 0.623) 3px;
+    width: 500px;
+    height: 55px;
+    background-color: rgba(0, 255, 0, 0.238);
+    font-size: 22px;
+    font-family: 'Roboto Condensed', sans-serif;
+   margin: auto;
+   text-align: center;
+   margin-top: 20px;
+   border-top-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   transition-duration: 0.3s;
+   box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.342) inset;
+  }
+
+
+#html {
+    scroll-behavior: smooth;
+}
+
+
+
+#container {
+    width: 145px;
+    height: 100px;
+    border: 1px solid #ccc;
+    overflow-x: scroll;
+  }
+
+  #content {
+    width: 250px;
+    background-color: #ccc;
+  }
+
+
+
+/* SECOND PART */
+/* SECOND PART */
+/* SECOND PART */
+/* SECOND PART */
+/* SECOND PART */
+/* SECOND PART */
+/* SECOND PART */
+
+  
+  .button1a {
+
+    margin: 50px;
+        display: flex;
+        outline-color: rgba(255, 238, 0, 0.349);
+        outline-width: 20px;
+        outline-style: solid;
+        border-radius: 15px;
+        border-color: #ffee00;
+        border-width: 15px;
+    background-color: rgb(57, 159, 255);
+    font-size: 25px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    
+      }
+    
+    .textinside {
+    
+    color:red;
+    font-style: italic;
+    
+    }
+    
+    .gridtest {
+    
+      position: relative;
+    display: inline-block;
+    max-width: 10000px;
+    max-height: 1000px;
+    background-color: #ff507669;
+    flex: 1;
+    }
+    
+    .ingrid {
+    
+    background-color: red;
+    max-width: 100%;
+    height: 30%;
+    margin-top: 15px;
+    
+    
+    }
+    
+    .buttoningrid {
+    
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    height: 40px;
+    width: 70%;
+    background-color: rgb(64, 155, 230);
+    outline: 3px white solid;
+    border: none;
+    border-radius: 10px;
+    
+    
+    }
+    
+    .ingridimg {
+    
+    position: relative;
+    width: 100%;
+    
+    
+    }
+    
+    .deepingrid {
+    
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    background-color: greenyellow;
+    width: 15%;
+    height: 80%;
+    outline-width: 5px;
+    outline-color: #ff5c5c;
+    outline-style: double;
+    box-shadow: 10px 10px 7px 5px #000000;
+    overflow: hidden;
+    }
+    
+    .inputbox {
+    
+      color: blue;
+      font-size: 44px;
+      width: 160px;
+      display: block;
+    
+    
+    
+    }
+    
+      .button2a {
+        display: block;
+        margin: auto;
+        margin-top: 18px;
+        margin-bottom: 50px;
+        padding: 0px 0px 0px 0px;
+        outline-color: rgb(0, 0, 0);
+        outline-width: 2px;
+        outline-style: solid;
+        border-width: 8px;
+        border-color: white;
+        border-radius: 25px;
+        background-image: linear-gradient( to top,  rgba(0, 26, 255, 0), 33%, rgba(255, 0, 234, 0.575)), linear-gradient( to right,  rgb(255, 196, 0), 50%, rgb(255, 0, 0));
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        transition-duration: 0.7s;
+        transition-property: all;
+       pointer-events: all;
+       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+       width: 80%;
+       height: 60%;
+    
+      }
+          
+    
+          .btnc:focus-within {
+    
+          margin: 200px;
+          outline-color: rgb(102, 255, 242);
+          height: 450px;
+          width: 300px;
+          outline-width: 15px;
+          
+         
+              }
+    
+              #btnmodh {
+    
+                width: 50px;
+                height: 50px;
+              }
+              
+    
+.btninside {
+    opacity: 0%;
+    width: 80%;
+       height: 0%;
+       padding: 0px;
+       border: 0px;
+    pointer-events: none;
+    position: relative;
+    border-radius: 3px;
+    transition: all 1s ease-in-out, opacity 0.5s 0s;
+    
+}
+
+
+    
+    @keyframes whitetonormal {
+    
+    
+    0% {
+    background-color: initial;
+    
+    }
+    
+    25% {
+    background-color: white;
+    }
+    100% {
+    background-color: rgba(183, 0, 255, 0.336);
+    
+    }
+    
+    }
+    
+    
+              .btnc:focus-within > .button2a {
+            
+               height: 20%;
+               transition-property: all ease-in;
+                    }
+    
+                    .btnc:focus-within > .btninside {
+             margin-top: 7%;
+                      margin-bottom: 3%;
+                      outline-color: rgb(204, 65, 65);
+                      outline-width: 3px;
+    
+                     pointer-events: all;
+                     opacity: 100%;
+                     position: relative;
+                     height: 15%;
+                     width: 65%;
+                     margin-right: auto;
+                     margin-left: auto;
+                     border-radius: 3px;
+                     transition: all 1.3s ease-in-out, width 0.5s opacity 1s 0.1s, margin 0.9s 0.3s, height 0.1s;
+                          }
+     
+    .btnc {
+    
+      border-radius: 5px;
+    background-color: rgb(52, 157, 255);
+    margin: 50px;
+    outline: 5px solid rgb(48, 255, 79);
+    height: 90px;
+    width: 200px;
+    transition-duration: 1s;
+    overflow: auto;
+    overflow-y: hidden;
+    
+    
+              }
+    
+      .article {
+        margin: 50px;
+        display: grid;
+        grid-template-rows: 150px 150px 150px;
+        grid-template-columns: 150px 150px 150px;
+        grid-gap: 15px;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+      }
+    
+      section {
+    height: 100%;
+    width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgb(170, 19, 19);
+        font-size: 3em;
+        position: relative;
+    
+    
+    
+      }
+    
+
+    
+      .text1 {
+    
+    color: #ff5c5c;
+    font-size: 25px;
+    margin-left: 300px;
+    
+      }
+    
+      .text1:hover {
+    
+        cursor: pointer;
+    color: rgb(0, 255, 221);
+    
+    
+    
+      }
+      .text1:active {
+    
+    color: black;
+    
+    
+      }
+
+    
+        .textbox {
+    
+    background-color: white;
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    display: block;
+    margin: 15px;
+    
+    
+        }
+    
+    .grid {
+    
+    display: grid;
+    grid-template-columns: 100px 250px 50px;
+    column-gap: 10px;
+    row-gap: 60px;
+    justify-content: right;
+    align-items: end;
+    
+    background-color: green;
+    z-index: 5;
+    height: 200px;
+    width: 1fr;
+    overflow: hidden;
+    
+    
+    }
+    
+    .grid2 {
+    
+    background-color: rgb(0, 174, 255);
+    outline: 3px yellow solid;
+    overflow: hidden;
+    height: 50px;
+    
+    
+    
+    }
+    
+  .flextest {
+    
+      display: flex;
+      background-color: rgba(54, 0, 32, 0.742);
+      border: 10px #4e0026 solid;
+      border-top: 10px #91003f solid;
+      border-bottom: 10px #350020 solid;
+      flex-wrap: wrap;
+      margin: auto;
+      justify-content: center;
+      flex-shrink: 0;
+      border-radius: 10px;
+      box-shadow: inset #00000036 0px 0px 35px 0px, 0px 0px 50px 10px rgba(185, 0, 65, 0.368);
+      max-width: 80%;
+      margin-top: 50px;
+      animation: sort_appear 1s forwards;
+      height: 100%;
+      padding-bottom: 5.5%;
+      
+    }   
+
+@keyframes sort_appear {
+
+  0% {scale: 50%;
+   
+     }
+  100% {}
+
+
+}
+    
+    .inflex {
+    
+    height: 120px;
+    width: 240px;
+    background-color: rgba(0, 0, 0, 0.445);
+    outline: rgb(255, 157, 0) 4px outset;
+    border: #000000 2px solid;
+    margin: 80px;
+    min-width: 100px;
+    transition-duration: 0.25s;
+    transition-delay: 0;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.378) inset, 0px 0px 25px 10px rgba(216, 158, 22, 0.219);
+    z-index: 17;
+    transition-timing-function: ease-in;
+    margin-top: 70px;
+
+    }
+
+    .inflex:hover {
+    
+      outline: rgb(158, 0, 0) 4px outset;
+      transition-duration: 0s;
+      transition-timing-function: ease-out;
+      scale: 115%;
+      transition-delay: 0;
+
+      }
+
+.inflex:hover .mod_info_inside {
+    
+  color: rgb(255, 255, 255);
+  transition-duration: 1s;
+}
+  
+
+.inflex_grid {
+
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: 50px;
+  gap: 15%;
+  grid-auto-flow: row;
+
+  justify-content: center;
+  position: relative;
+  top: 50%;
+  
+}
+
+.info_icon1 {
+
+width: 50px;
+height: 50px;
+z-index: 5;
+
+position: relative;
+margin: auto;
+
+filter: drop-shadow(0px 0px 7px rgb(104, 0, 0));
+
+
+}
+
+.info_icon2 {
+
+  width: 50px;
+  height: 50px;
+  z-index: 5;
+  
+  position: relative;
+  margin: auto;
+  filter: drop-shadow(0px 0px 7px rgb(104, 0, 0));
+}
+
+.info_icon3 {
+
+  width: 50px;
+  height: 50px;
+  z-index: 5;
+  
+  position: relative;
+  margin: auto;
+  filter: drop-shadow(0px 0px 7px rgb(104, 0, 0));
+}
+
+.mod_info {
+
+width: 300px;
+position: absolute;
+left: -13%;
+right: 0;
+top: -130%;
+
+}
+
+    
+.whitebox {
+
+bottom: 0px;
+position: absolute;
+height: 100%;
+width: 100%;
+background-color: rgb(102, 0, 26);
+border-radius: 0px;
+z-index: 16;
+
+animation: forwards 1s fade_choose;
+
+
+}
+
+.btn_move_behind {
+
+scale: 50% !important;
+
+}
+
+
+  .divtop {
+    
+      background-color: #ffc25d;
+      outline: 2px #e6e0d6 solid;
+      height: 230px;
+      width: 200%;
+      position: fixed;
+      left: 87vw;
+      margin: 5px;
+      top: -170px;
+      z-index: 35;
+      border: 5px #e9a54f solid;
+      transition: 1s ease-out 0s;
+      transition-timing-function: ease-in-out;
+      border-radius: 25px;
+      overflow: hidden;
+
+      }
+      
+      .div1 {
+      
+      height: 1000px;
+      width: 800px;
+      margin: 40px;
+      background-color: rgb(161, 55, 161);
+      position: relative;
+      outline: 15px rgba(255, 0, 76, 0.548) dashed;
+      border: 10px rgba(255, 0, 119, 0.432) groove;
+      box-shadow: 0px 0px 35px rgb(255, 37, 190);
+      display: inline-block;
+      }
+      
+      
+      
+      
+    /*  .divtop:before {
+          content: "";
+          background-color: rgb(255, 56, 56);
+          outline: 17px rgb(139, 0, 0) solid;
+          height: 200px;
+          width: 9000px;
+          position: fixed;
+          left: -45px;
+          margin: 5px;
+          top: -170px;
+          z-index: 1;
+          border: 25px rgba(128, 0, 0, 0.384) dotted;
+          border-bottom-left-radius: 500px;
+      outline-offset: 7px;
+      }
+      
+      .divtop:after {
+          content: "";
+          background-color: none;
+      outline: 7px rgb(255, 143, 52) solid;
+      height: 200px;
+      width: 9000px;
+      position: fixed;
+      left: -45px;
+      margin: 5px;
+      top: -170px;
+      z-index: 1;
+      border: 25px rgba(0, 224, 168, 0) dotted;
+      border-bottom-left-radius: 500px;
+      outline-offset: 20px;
+      
+      }
+      */
+
+      .toptext {
+      
+          font-size: 70px;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          display: block;
+          text-align: center;
+          margin: 20px;
+          margin-bottom: 30px;
+      
+      
+      }
+      
+      .div2 {
+      
+      display: inline-block;
+      height: 800px;
+      width: 400px;
+      background-color: rgb(100, 100, 255);
+      margin: 60px;
+      outline: 10px rgb(255, 255, 255) solid;
+      position: relative;
+      overflow: hidden;
+      align-items: center;
+      
+      
+      }
+      
+      .divindiv {
+      
+      height: 10%;
+      width: 15%;
+      background-color: red;
+      display: inline-block;
+      margin: 1%;
+      outline: 5px black inset;
+      
+      
+      
+      }
+    
+    
+.zindexfix {
+
+z-index: 5;
+position: fixed;
+height: 350px;
+width: 500px;
+top: 0;
+margin-left: 45%;
+display: grid;
+background-image: url(moddworld_graphics/scroll_transparent.png);
+background-repeat: no-repeat;
+background-size: 100%;
+background-position: 0% -270px;
+padding-top: 17px;
+grid-template-rows: 60px 60px 60px;
+
+}
+
+.odd_on {
+
+  opacity: 0%;
+  transition: opacity 0.7s 0s;
+  }
+
+.odd_on2 {
+
+left: 10%;
+      
+  }
+
+    @keyframes introrotate {
+
+      
+      100% {rotate: 360deg;}
+      40% {scale: 60%;}
+      
+      }
+      
+      @keyframes introrotate2 {
+
+     
+        100% {rotate: -360deg;}
+        40% {scale: 60%;}
+        }
+
+@keyframes introbtnanim {
+
+      100% {background-image: url(moddworld_graphics/button1websiteremakealt.png);
+
+      }
+      }
+        
+@keyframes btn_flip {
+
+      0% {background-image: url(moddworld_graphics/button1websiteremakealt.png);}
+      85% {background-image: url(moddworld_graphics/button1websiteremake.png);}
+      
+      }
+
+
+
+.introbtn {
+
+height: 45px;
+width: 105px;
+background-image: url(moddworld_graphics/button1websiteremake.png);
+background-size: cover;
+position: relative;
+top: 173px;
+background-color: rgba(255, 255, 255, 0);
+border: none;
+right: -4px;
+animation: introbtnanim 1s steps(1, end) forwards, introrotate 0.5s 0.7s ease-in-out, hue_change 40s infinite;
+shape-outside: url(moddworld_graphics/button1websiteremake.png);
+filter: drop-shadow(0px 0px 5px rgb(0, 0, 0)) hue-rotate(0deg);
+
+}
+
+@keyframes hue_change {
+
+  0% {filter: drop-shadow(0px 0px 5px rgb(0, 0, 0))  hue-rotate(0deg);}
+
+  25% {filter: drop-shadow(0px 0px 5px rgb(0, 0, 0))  hue-rotate(-60deg);}
+
+  50% {filter: drop-shadow(0px 0px 5px rgb(0, 0, 0))  hue-rotate(-120deg);}
+
+  75% {filter: drop-shadow(0px 0px 5px rgb(0, 0, 0))  hue-rotate(-60deg);}
+
+  100% {filter: drop-shadow(0px 0px 5px rgb(0, 0, 0))  hue-rotate(0deg);}
+
+}
+
+.divtopalt {
+  background-color: #cf9639;
+  border: 5px #c58129 solid;
+  outline: 4px #e6e0d6 solid;
+}
+
+
+.btnflip      {
+ 
+
+animation: btn_flip 1s steps(1, end) forwards, introrotate2 0.5s 0.7s ease-in-out, hue_change 40s infinite;
+background-image: url(moddworld_graphics/button1websiteremake.png);
+
+
+}
+
+#top_f {
+  margin-top: 80px;
+
+
+}
+
+.p1alt {
+
+  margin-left: 180px;
+  margin-right: 0;
+  transition-duration: 1.5s;
+
+  }
+
+.uppersections {
+  
+background-color: #b834004f;
+height: 150px;
+width: 543px;
+margin: auto;
+padding-top : 20px;
+border-radius: 15px;
+box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.75) inset;
+margin-bottom: 80px;
+margin-top: 40px;
+}
+
+.moddworld_logo {
+
+width: 800px;
+height: 400px;
+margin: auto;
+margin-top: 60px;
+
+background-image: url(moddworld_graphics/moddworld_logo.png);
+background-repeat: no-repeat;
+background-size: 100%;
+background-size: cover;
+}
+
+
+.choose1 {
+display: inline;
+height: 90px;
+width: 180px;
+text-align: center;
+z-index: 16;
+font-size: 35px;
+font-family: 'Fjalla One', sans-serif;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-right: 5%;
+margin-left: 5%;
+background-color: rgba(255, 157, 0, 0.642);
+box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.353) inset;
+border: 3px rgba(255, 183, 0, 0.681) ridge;
+border-radius: 10px;
+color: rgb(255, 205, 78);
+text-shadow: 2px 2px 2px black;
+}
+
+.choose2 {
+  display: inline;
+  height: 90px;
+  width: 180px;
+  text-align: center;
+  z-index: 16;
+  font-size: 35px;
+  font-family: 'Fjalla One', sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 5%;
+  margin-left: 5%;
+  background-color: rgba(255, 157, 0, 0.642);
+  box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.353) inset;
+  border: 3px rgba(255, 183, 0, 0.681) ridge;
+  border-radius: 10px;
+  color: rgb(255, 205, 78);
+  max-width: 100px;
+  text-shadow: 2px 2px 2px black;
+}
+
+.choose3 {
+  display: inline;
+  height: 90px;
+  width: 180px;
+  text-align: center;
+  z-index: 16;
+  font-size: 35px;
+  font-family: 'Fjalla One', sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 5%;
+  margin-left: 5%;
+  background-color: rgba(255, 157, 0, 0.642);
+  box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.353) inset;
+  border: 3px rgba(255, 183, 0, 0.681) ridge;
+  border-radius: 10px;
+  color: rgb(255, 205, 78);
+  text-shadow: 2px 2px 2px black;
+}
+
+@keyframes fade_choose {
+
+0% {opacity: 100%}
+
+100% {opacity: 0%}
+
+}
+
+#btnmod1:hover {
+
+scale: 90%;
+
+transition-delay: 0s !important;
+transition-duration: 0.15s !important;
+transition-timing-function: ease-out !important;
+
+border: 7px #ce6e00 dashed;
+border-left-color: #8b490b;
+border-bottom-color: #8b490b;
+
+box-shadow: inset 0px 0px 15px 5px rgba(194, 9, 9, 0.63),0px 0px 15px 1px #ff7a22b0;
+background-color: #ffae00;
+
+}
+
+#btnmod1:active {
+
+opacity: 75%;
+transition-duration: 0s !important;
+transition-delay: 0s !important;
+}
+
+#btnmod1a:hover {
+  background-color: rgb(97, 0, 0);
+  transition: height 1s 0.2s, width 1s 0.2s ease-in-out, top 0.5s ease-out, opacity 1s 0s, background-color 0.15s, rotate 0.7s 0.3s !important;
+   }
+
+#btnmod1a:focus {
+
+transition: height 1s 0.2s, width 1s 0.2s ease-in-out, top 0.5s ease-out, opacity 1s 0s, background-color 0s !important;
+height: 300px !important; 
+
+top: 27%; 
+z-index: 14;
+
+border: none;
+background-color: rgba(255, 0, 0, 0) !important;
+box-shadow: none;
+
+  }
+
+  #btnmod1a:focus > .more_info {
+    transition-duration: 0.7s;
+    opacity: 0;
+  
+  }
+  
+  #btnmod1a:focus > .more_info2 {
+  transition-duration: 0.7s;
+  opacity: 0;
+  
+  }
+  
+#btnmod1a:focus > .more_info_bg {
+
+    transition: opacity 0.7s 0.3s;
+    opacity: 100%; 
+    top: 25%;
+    scale: 85%;
+ }
+
+ #btnmod1a:focus:hover > .info_over_scroll {
+  
+  transition: opacity 1.5s 0.15s;
+  opacity: 100%; 
+  height: 70%;
+  width: 100%;
+  top: 25%;
+  margin: auto;
+  scale: 85%;
+}
+
+#btnmod1a:focus:hover > .over_scroll_text {
+  
+  transition: opacity 0.8s 0.5s;
+  opacity: 100%;
+  width: 100%;
+  height: 45%;
+  top: -30%;
+
+  left: 0;
+  right: 0;
+}
+
+.star_rating {
+
+  position: absolute;
+  color: rgb(196, 23, 23);
+  -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.349);
+  left: 3.9%;
+  top: 31%;
+  font-size: 19px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  text-shadow: 0px 0px 3px black;
+}
+
+.mod_name_inside {
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: rgb(224, 194, 60);
+  font-size: 23px;
+
+  text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black; 
+  filter: drop-shadow(0px 0px 3px rgba(255, 174, 0, 0.616));
+}
+
+.mod_info_inside {
+  
+  padding-bottom: 12px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+  pointer-events: none;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: rgb(204, 88, 0);
+  font-size: 13px;
+  border-bottom: #ffa60039 3px solid;
+
+  bottom: -220px;
+  text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black; 
+  filter: drop-shadow(0px 0px 3px rgba(255, 0, 0, 0.301));
+  text-align: center;
+  line-height: 17px;
+  transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 800px) {
+
+  .ingridlevels {
+    width: 250px;
+    left: 0;
+    right: 0;
+    }
+
+    .mod1img {
+
+      width: 250px;
+    }
+
+    .altfeatured {
+      font-size: 70px !important;
+      margin: auto;
+
+    }
+
+    #top_f {
+      margin: auto;
+      margin-top: 70px;
+
+    }
+
+
+  .divupper {
+  display: block;
+  margin: 0 auto !important;
+  padding: 20px !important;
+  width: 80% auto;
+  left: 0;
+  right: 0;
+  min-width: 0;
+  position: relative;
+  scale: 80%;
+  }
+
+  .gridlevels {
+    padding: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+
+  .mod1:hover {
+    width: 400px;
+    height: 650px;
+    }
+
+      .mod1img:hover {
+      width: 400px;
+      height: 650px;
+      }
+
+      #mod2img:hover {
+        width: 400px;
+        height: 650px;
+      }
+
+      #mod3img:hover {
+        width: 400px;
+        height: 650px;
+      }
+
+      #mod4img:hover {
+        width: 400px;
+        height: 650px;
+      }
+
+
+    .mod1img:hover + .featuredmod1  {
+      top: -200px;
+    }
+
+    #mod2img:hover + .featuredmod2  {
+      top: -200px;
+    }
+
+    #mod3img:hover + .featuredmod3  {
+      top: -200px;
+    }
+
+    #mod4img:hover + .featuredmod2  {
+      top: -200px;
+    }
+
+    .btnbg {
+
+      top: -50%;
+      height: 150px;
+      pointer-events: none;
+    }
+
+    #btnmod1a {
+      scale: 70%;
+      position: absolute !important;
+
+      right: -7%;
+      margin: auto;
+    }
+
+    #btnmod1 {
+      scale: 70%;
+      position: absolute !important;
+
+      right: 0%;
+      left: 0%;
+      margin: auto;
+      bottom: 18%
+    }
+
+    .featured {
+
+      font-size: 30px;
+
+    }
+
+    .featuredmod1 {
+      top: -210px;
+
+    }
+
+    .CUSTOMLEVELSTEXT {
+      height: 100px;
+      width: 300px;
+
+    }
+
+    .toggle_font_size {
+      font-size: 17px !important;
+      top: 73px !important;
+      position: absolute;
+    }
+
+    .select_toggle_size {
+      font-size: 40px !important;
+      line-height: 70px;
+      white-space: nowrap;
+    }
+
+    .choose1 {
+      font-size: 20px;
+    }
+
+    .choose2 {
+      font-size: 30px;
+    }
+
+    .choose3 {
+      font-size: 20px;
+    }
+
+    #btnmod1a:focus > .more_info_bg {
+
+    top: 0px;
+    }
+
+    #btnmod1a:focus:hover > .info_over_scroll {
+
+      top: 0;
+      }
+
+      #btnmod1a:focus > .over_scroll_text {
+
+        top: -182px !important;
+        }
+
+        #btnmod1a:focus{
+          top: -15px;
+
+        }
+
+        .btn_left {
+          scale: 65%;
+          top: 64px;
+          left: -35px;
+        }
+
+        .btn_right {
+          scale: 80%;
+          top: 64px;
+          right: -20px;
+          z-index: 50;
+
+        }
+
+        #btnmod1:hover {
+          scale: 65%;
+
+        }
+
+        .moddworld_logo {
+          width: 400px;
+          height: 200px;
+        }
+
+
+.inflex {
+  min-width: 240px !important;
+  display: block;
+  scale: 70%;
+  margin-top: 40px;
+
+}
+
+.inflex:hover {
+  scale: 85%;
+  font-size: 240px !important;
+  }
+
+.bg_shadow {
+opacity: 80%;
+
+
+}
+
+.uppersections {
+position: relative;
+width: 330px;
+margin-top: 160px;
+}
+
+#section1 {
+  width: 280px;
+  right: 0;
+  left: 0;
+  position: absolute;
+  font-size: 15px;
+
+}
+
+#section2 {
+margin-top: 80px;
+height: 40px;
+width: 280px;
+right: 0;
+left: 0;
+position: absolute;
+font-size: 15px;
+
+}
+
+.divtop {
+
+scale: 80%;
+left: 55%;
+top: -160px;
+overflow: visible;
+}
+
+.odd_on2 {
+
+  left: -102%;
+}
+
+.zindexfix {
+
+  top: 69%;
+  left: 15%;
+}
+
+.btnflip      {
+
+left: 53%;
+
+}
+
+}
