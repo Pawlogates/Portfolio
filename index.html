@@ -77,6 +77,14 @@
                     
             </div>
 
+            <div class="element_box" style="grid-column: 3; grid-row: 6; transform: translateX(0vw);">
+                <div class="button_a" id="btn6a"></div>
+                <h1 class="button_a_text">6</h1>
+
+                    
+            </div>
+
+
 
 
 
@@ -98,7 +106,7 @@
             </div>
             
 
-            <div class="element_box" id="btn1c_moveUp" style="grid-column: 15; grid-row: 3; transform: translateY(0vw); animation: 5s updownloop ease-in-out infinite; z-index: 201; scale: 75%; transition-duration: 1s !important;">
+            <div class="element_box btn1c_root" id="btn1c_moveUp" style="grid-column: 15; grid-row: 3; transform: translateY(0vw); animation: 5s updownloop ease-in-out infinite; z-index: 201; scale: 75%; transition-duration: 1s !important;">
                 <div class="button_c" id="btn1c"></div>
                 <div class="button_c_icon"></div>
                 
@@ -166,7 +174,7 @@
 
 
 
-            <div class="element_box" style="grid-column: 14 / span 2; grid-row: 2 / span 2; transform: translate(2.2vw, -2.2vw);">
+            <div class="element_box user_picture_root" style="grid-column: 14 / span 2; grid-row: 2 / span 2; transform: translate(2.2vw, -2.2vw);">
                 <div class="user_picture"></div>            
                 
             </div>
@@ -226,8 +234,10 @@
                 <div class="inside_section">
                     <h1 class="text_top">Projekt 3 - Pekka Kana Zero</h1>
                     <p class="text_main">Pełne odtworzenie gry Pekka Kana 2 w silniku Godot, oraz przerobienie całej grafiki na wersję wysokiej jakości. (Nadal bardzo aktywnie pracuję nad tą bazą, i ostateczna grą ma na razie nazwę "Exponaut". Pekka Kana Zero to tylko branch tego projektu bo chciałem mieć coś SKOŃCZONEGO po 4 miesiącach aktywnej pracy. Gra jest (bardzo) oparta na nielinearności, oraz systemach pozwalających na sprytne zwiększanie wartości zbieranych punktów.)</p>
-                    <a class="text_link" style="display: inline; margin: auto; margin-left: 4vw; font-size: 2vw;" href="https://godotengine.org/asset-library/asset/2455">Strona gry</a>
-                    <a class="text_link" style="display: inline; margin: auto; margin-left: 7vw; font-size: 2vw;" href="https://youtu.be/U1-YAEV2icw?si=RcnVkANvFQuSX_Ft">Film z gry</a>
+                        <div style="display: flex; align-items: flex-end; margin-top: 0;">
+                            <a class="text_link" style="display: inline; font-size: 2vw; margin-top: 2vw;" href="https://godotengine.org/asset-library/asset/2455">Strona gry</a>
+                            <a class="text_link" style="display: inline; font-size: 2vw; margin-top: 2vw;" href="https://youtu.be/U1-YAEV2icw?si=RcnVkANvFQuSX_Ft">Film z gry</a>
+                        </div>
 
                 </div>
             </div>
@@ -242,15 +252,15 @@
 
         <div class="slider" id="slider4" style="background-image: url(images/Portfolio\ \(rysunek\).png); transform: translateX(-15vw);">
 
-            <div class="section_type1 hide_on_hover" style="left: 0vw; height: 8vw !important; aspect-ratio: 6/2;">
+            <div class="section_type1 hide_on_hover slider4hack2" style="left: 0vw;">
                 <div class="inside_section" style="height: 20vw !important;">
-                    <h1 class="text_top">Grafika + Inne strony</h1>
+                    <h1 class="text_top">Grafika</h1>
                     <p class="text_main">...</p>
          
                 </div>
             </div>
 
-            <div class="section_type2 hide_on_hover" style="background-image: url(images/Portfolio\ \(design\).png); transform: translateX(33vw);">
+            <div class="section_type2 hide_on_hover slider4hack1" style="background-image: url(images/Portfolio\ \(design\).png);">
                 <div class="inside_section">
 
                 </div>
@@ -260,12 +270,11 @@
 
         <div class="slider" id="slider5" style="background-image: url(images/wp8.png);">
 
-            <div class="section_type1">
+            <div class="section_type1" style="height: 15vw !important; aspect-ratio: 2/1 !important;">
                 <div class="inside_section">
-                    <h1 class="text_top">Projekt 3 - Pekka Kana Zero</h1>
-                    <p class="text_main">Pełne odtworzenie gry Pekka Kana 2 w silniku Godot, oraz przerobienie całej grafiki na wersję wysokiej jakości. (Nadal bardzo aktywnie pracuję nad tą bazą, i ostateczna grą ma na razie nazwę "Exponaut". Pekka Kana Zero to tylko branch tego projektu bo chciałem mieć coś SKOŃCZONEGO po 4 miesiącach aktywnej pracy. Gra jest (bardzo) oparta na nielinearności, oraz systemach pozwalających na sprytne zwiększanie wartości zbieranych punktów.)</p>
-                    <a class="text_link" style="display: inline; margin: auto; margin-left: 4vw; font-size: 2vw;" href="https://godotengine.org/asset-library/asset/2455">Strona gry</a>
-                    <a class="text_link" style="display: inline; margin: auto; margin-left: 7vw; font-size: 2vw;" href="https://youtu.be/U1-YAEV2icw?si=RcnVkANvFQuSX_Ft">Film z gry</a>
+                    <h1 class="text_top">???</h1>
+                    <p class="text_main" style="text-align: center;">Kilka niedokończonych projektów stron.</p>
+                    <a class="text_link" href="Test/index.html" style="margin-top: 3vw;">Link do strony</a>
 
                 </div>
             </div>
@@ -278,11 +287,23 @@
 
         </div>
 
+
+        <div class="slider slider_long" id="slider6" style="background-image: url(images/wp8.png);">
+            <div class="slider_long_display">
+                <img src="images/bg_a.png" class="slider_long_content">
+                <img src="images/bg_a1.png" class="slider_long_content">
+                <img src="images/bg_a2.png" class="slider_long_content">
+                <img src="images/bg_main.png" class="slider_long_content">
+
+            </div>
+        </div>
+
         <div class="closer" id="closer1"></div>
         <div class="closer" id="closer2"></div>
         <div class="closer" id="closer3"></div>
         <div class="closer" id="closer4" style="top : -0.8vw"></div>
         <div class="closer" id="closer5"></div>
+        <div class="closer" id="closer6" style="top : 2.5vw"></div>
 
 
 

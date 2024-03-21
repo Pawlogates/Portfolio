@@ -127,6 +127,28 @@ $(function(){
     });
 });
 
+/* LONG SLIDERS */
+
+$(function(){
+    $('#btn6a').on('click', function(){
+
+        $('#slider6').toggleClass('slider_active');
+        $('.elements_container').toggleClass('elements_container_hidden');
+        $('#closer6').toggleClass('closer_active');
+
+    });
+});
+
+$(function(){
+    $('#closer6').on('click', function(){
+
+        $('#slider6').toggleClass('slider_active');
+        $('.elements_container').toggleClass('elements_container_hidden');
+        $('#closer6').toggleClass('closer_active');
+
+    });
+});
+
 /* B-TYPE BUTTONS */
 
 $(function(){
