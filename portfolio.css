@@ -17,7 +17,7 @@ html {
     top: 0;
     bottom: 0;
 
-    background-color: rgba(255, 0, 0, 0.596);
+    background-color: rgba(255, 0, 0, 0);
 
     transition-duration: 0.5s;
 
@@ -579,7 +579,13 @@ html {
         right: -8%;
     }
     
-    
+    .main_bgDeco {
+        opacity: 0;
+    }
+
+    .main_overlay2 {
+        opacity: 0;
+    }
 
 
     .textbox {
@@ -1178,7 +1184,7 @@ html {
     width: 100%;
     font-size: 1.4vw;
     text-align: left;
-    background-color: rgb(161, 217, 255);
+    background-image: radial-gradient(rgb(74, 174, 255), rgb(0, 73, 218));
     border-radius: 1vw;
     outline: white 0.2vw solid;
 
