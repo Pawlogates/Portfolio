@@ -17,15 +17,25 @@ html {
     top: 0;
     bottom: 0;
 
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 0, 0, 0.596);
 
     transition-duration: 0.5s;
 
 }
 
+.main_bgDeco {
+    width: 100vw;
+    height: 50vw;
+    background-color: rgba(255, 187, 0, 0.228);
+    position: absolute;
+    rotate: 15deg;
+    right: -15vw;
+    bottom: 28.3vw;
+}
+
 .elements_container {
     display: grid;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 70, 70, 0);
     background-image: url(images/wp8.png);
     background-size: cover;
     outline: 0.4vw black solid;
@@ -1041,9 +1051,9 @@ html {
 .main_overlay2 {
     width: 100%;
     height: 100%;
-    background-image: radial-gradient(rgba(255, 0, 0, 0.185), rgba(141, 218, 0, 0.397));
+    background-image: radial-gradient(rgba(255, 0, 0, 0.443), rgba(218, 134, 0, 0.418));
     position: absolute;
-    animation: gradient_scroll 90s infinite;
+    animation: gradient_scroll 90s alternate-reverse infinite;
     box-shadow: inset 0 0 5vw black;
     z-index: 0;
 
@@ -1061,8 +1071,9 @@ html {
     height: 100%;
     position: absolute;
 
-    background-color: rgba(255, 255, 255, 0.107);
+    background-color: rgba(255, 0, 0, 0);
     z-index: 1;
+    overflow: hidden;
 }
 
 #slider1 {
@@ -1147,7 +1158,7 @@ html {
 
 .text_link {
     display: block;
-    width: 100%;
+    width: 60%;
     margin: auto;
     margin-top: 5vw;
     text-align: center;
@@ -1155,6 +1166,8 @@ html {
     background-color: rgba(255, 205, 69, 0.68);
     border-radius: 0.8vw;
     text-shadow: black 0.2vw 0.1vw 0.1vw;
+    padding-bottom: 0.8vw;
+    outline: 0.3vw white solid;
 }
 
 
