@@ -318,13 +318,13 @@ html {
 }
 
 .bg_cover {
-    height: 100%;
-    width: 100%;
+    height: 1000%;
+    width: 1000%;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 14;
+    top: -50vw;
+    left: -50vw;
+    z-index: 250;
     transition-duration: 1s;
 
 }
@@ -1164,7 +1164,7 @@ html {
 
 .text_link {
     display: block;
-    width: 60%;
+    width: 40%;
     margin: auto;
     margin-top: 5vw;
     text-align: center;
@@ -1211,10 +1211,14 @@ html {
 .slider_long {
     width: 100%;
     height: fit-content;
-    padding: 1vw;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+
     margin: auto;
     left: 0;
     right: 0;
+    z-index: 100;
+    overflow: hidden;
 }
 
 .slider_long_display {
@@ -1222,22 +1226,24 @@ html {
     height: 85vh;
     margin: auto;
     display: block;
-    padding: 1vw;
-    overflow: scroll;
+    padding: 0.2vw;
+    overflow-y: scroll;
     background-color: black;
+    
 
 
 }
 
+/*
 .slider_long_display::-webkit-scrollbar {
     display: none;
 
 }
+*/
 
 .slider_long_content {
     width: 100%;
     height: auto;
     margin: auto;
     display: block;
-
 }

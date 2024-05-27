@@ -29,7 +29,7 @@
 
     <div class="main_container">
 
-        <div class="elements_container">
+        <div class="elements_container elements_container_hidden">
 
             <div class="main_overlay">
                 <div class="main_bgDeco"></div>
@@ -82,14 +82,13 @@
                     
             </div>
             
-            <!--
             <div class="element_box" style="grid-column: 3; grid-row: 6; transform: translateX(0vw);">
                 <div class="button_a" id="btn6a"></div>
                 <h1 class="button_a_text">6</h1>
 
                     
             </div>
-            -->
+            
 
 
 
@@ -216,7 +215,7 @@
 
         </div>
 
-        <div class="slider" id="slider2" style="background-image: url(images/wp7.png);">
+        <div class="slider" id="slider2" style="background-image: url(images/display_combonaut.png);">
 
             <div class="section_type1">
                 <div class="inside_section">
@@ -227,7 +226,7 @@
                 </div>
             </div>
 
-            <div class="section_type2" style="background-image: url(images/bg_a1.png);">
+            <div class="section_type2" style="background-image: url(images/display_combonaut2.png);">
                 <div class="inside_section">
 
                 </div>
@@ -235,9 +234,9 @@
 
         </div>
 
-        <div class="slider" id="slider3" style="background-image: url(images/wp8.png);">
+        <div class="slider" id="slider3" style="background-image: url(images/wp4.png);">
 
-            <div class="section_type1">
+            <div class="section_type1" style="height: 30vw;">
                 <div class="inside_section">
                     <h1 class="text_top">Projekt 3 - Pekka Kana Zero</h1>
                     <p class="text_main">Pełne odtworzenie gry Pekka Kana 2 w silniku Godot, oraz przerobienie całej grafiki na wersję wysokiej jakości. (Nadal bardzo aktywnie pracuję nad tą bazą, i ostateczna grą ma na razie nazwę "Exponaut". Pekka Kana Zero to tylko branch tego projektu bo chciałem mieć coś SKOŃCZONEGO po 4 miesiącach aktywnej pracy. Gra jest (bardzo) oparta na nielinearności, oraz systemach pozwalających na sprytne zwiększanie wartości zbieranych punktów.)</p>
@@ -249,7 +248,7 @@
                 </div>
             </div>
 
-            <div class="section_type2" style="background-image: url(images/wp4.png);">
+            <div class="section_type2" style="background-image: url(images/display_exponaut.png);">
                 <div class="inside_section">
 
                 </div>
@@ -275,13 +274,13 @@
 
         </div>
 
-        <div class="slider slider_active" id="slider5" style="background-image: url(images/wp8.png);">
+        <div class="slider" id="slider5" style="background-image: url(images/wp8.png);">
 
             <div class="section_type1" style="height: 15vw !important; aspect-ratio: 2/1 !important;">
                 <div class="inside_section">
                     <h1 class="text_top">???</h1>
                     <p class="text_main" style="text-align: center;">Kilka niedokończonych projektów stron.</p>
-                    <a class="text_link" href="Test/index.html" style="margin-top: 3vw;">Link do strony</a>
+                    <a class="text_link" href="Test/index.html" style="margin-top: 3vw; font-size: 1.8vw;">Link do strony</a>
 
                 </div>
             </div>
@@ -295,7 +294,7 @@
         </div>
 
 
-        <div class="slider slider_long" id="slider6" style="background-image: url(images/wp8.png);">
+        <div class="slider slider_long slider_active" id="slider6" style="background-color: rgba(0, 0, 0, 0) !important;">
             <div class="slider_long_display">
                 <img src="images/bg_a.png" class="slider_long_content">
                 <img src="images/bg_a1.png" class="slider_long_content">
@@ -310,12 +309,12 @@
         <div class="closer" id="closer3"></div>
         <div class="closer" id="closer4" style="top : -0.8vw"></div>
         <div class="closer" id="closer5"></div>
-        <div class="closer" id="closer6" style="top : 2.5vw"></div>
+        <div class="closer closer_active" id="closer6" style="z-index: 200; top: 17.5vw; right: -0.6vw;"></div>
 
 
 
 
-        <div class="start_msg">
+        <div class="start_msg" style="z-index: 300;">
             <p class="start_msg_text">Tutaj tekst jakis bedzie</p>
             <div class="closer" id="start_msg_closer"></div>
         </div>
