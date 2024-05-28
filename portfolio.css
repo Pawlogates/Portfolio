@@ -1184,7 +1184,7 @@ html {
     width: 100%;
     font-size: 1.4vw;
     text-align: left;
-    background-image: radial-gradient(rgb(74, 174, 255), rgb(0, 73, 218));
+    background-image: radial-gradient(rgb(74, 143, 255), rgb(0, 73, 218));
     border-radius: 1vw;
     outline: white 0.2vw solid;
 
@@ -1246,4 +1246,5 @@ html {
     height: auto;
     margin: auto;
     display: block;
+    outline: black 0.15vw solid;
 }
