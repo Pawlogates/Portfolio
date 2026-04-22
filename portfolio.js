@@ -21,8 +21,9 @@ else{
 /*teraz poniżej już normalne funkcje*/
 
 
-
+/*
 document.querySelector("#textbox1").style.display = "none"
+*/
 
 /* A-TYPE BUTTONS */
 
@@ -180,6 +181,9 @@ $(function(){
         $('.bg_cover').toggleClass('hide_this');
         $('#start_msg_closer').toggleClass('hide_this');
         $('.start_msg').toggleClass('start_box_hide');
+
+        $('.elements_container').toggleClass('elements_container_active');
+        $('.on_start_scale').toggleClass('on_start_scale_active');
 
     });
 });
