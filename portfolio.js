@@ -189,3 +189,88 @@ $(function(){
 });
 
 
+/* debug */
+$('.bg_cover').toggleClass('hide_this');
+$('#start_msg_closer').toggleClass('hide_this');
+$('.start_msg').toggleClass('start_box_hide');
+
+$('.elements_container').toggleClass('elements_container_active');
+$('.on_start_scale').toggleClass('on_start_scale_active');
+
+
+var list_color_red = [
+        "#FF6633",
+        "#FFB399",
+        "#FFFF99",
+        "#E6B333",
+        "#999966",
+        "#809980",
+        "#E6FF80",
+        "#999933",
+        "#FF3380",
+        "#CCCC00",
+        "#FF4D4D",
+]
+
+var list_color_green = [
+        "#FF6633",
+        "#FFB399",
+        "#FFFF99",
+        "#E6B333",
+        "#999966",
+        "#809980",
+        "#E6FF80",
+        "#166b20",
+        "#999933",
+        "#CCCC00",
+        "#66E64D",
+]
+
+var list_color_blue = [
+        "#FF6633",
+        "#FFB399",
+        "#FF33FF",
+        "#FFFF99",
+        "#00B3E6",
+        "#E6B333",
+        "#3366E6",
+        "#999966",
+        "#809980",
+        "#E6FF80",
+        "#999933",
+        "#CCCC00",
+        "#4D80CC",
+        "#99E6E6",
+        "#6666FF",
+]
+
+console.log(Math.floor(Math.random() * 3))
+var list_color = ["FF4D4D"]
+
+var rolled_list_color_id = Math.floor(Math.random() * 3)
+
+if (rolled_list_color_id == 0)
+{
+    list_color = list_color_red
+}
+else if (rolled_list_color_id == 1)
+{
+    list_color = list_color_green
+}
+else if (rolled_list_color_id == 2)
+{
+    list_color = list_color_blue
+}
+
+var list_display_general = document.getElementsByClassName("display_general")
+var item_pos = 0
+
+for (let x = 0; list_display_general[item_pos] != list_display_general[-1]; item_pos += 1)
+{
+    list_display_general[item_pos].style.outlineColor = list_color[Math.floor(Math.random() * list_color.length)];
+}
+
+if(document.getElementsByTagName("HTML")[0].dir=="ltr")
+{
+    document.getElementsByClassName("first")[0].style.backgroundColor="cyan";
+}
