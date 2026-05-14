@@ -1,9 +1,9 @@
 html {
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(77, 77, 77);
     font-family: 'Oswald', sans-serif;
     font-size: 2vw;
     overflow: hidden;
-
+    transition-duration: 1s;
 }
 
 .main_container {
@@ -20,7 +20,6 @@ html {
     background-color: rgba(0, 0, 0, 0);
 
     transition-duration: 0.5s;
-
 }
 
 .elements_container {
@@ -46,8 +45,25 @@ html {
     opacity: 1;
     box-shadow: 0vw 0vw 0.5vw 0.25vw rgba(0, 0, 0, 0.338);
     padding: 0.5vw;
+}
 
+.elements_container_active {
+    transition: cubic-bezier(0.755, 0.01, 0.855, 0.2) 1s;
+    transition-delay: 0.5s;
+    outline: 20vw rgba(0, 0, 0, 0.607) solid;
+    background-color: rgb(0, 0, 0);
 
+}
+
+.element_box {
+    display: flex;
+    background-color: none;
+    outline: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 5;
 }
 
 .display_general {
@@ -55,20 +71,217 @@ html {
     justify-content: center;
     align-items: center;
 
-    background-image: url("images/wp3.png");
+    background-image: url("images/1.png");
+    box-shadow: 0vw 0vw 1vw 1vw rgb(255, 0, 0);
+
     z-index: 5;
     background-color: rgb(0, 0, 0);
     background-size: cover;
     outline: 0.3vw rgb(17, 94, 39) outset;
     width: 100%;
     height: 100%;
-    transition: 1s ease-in-out;
-    opacity: 1;
-    box-shadow: rgba(0, 0, 0, 0.667) 0.5vw 0.5vw 1vw;
-
-
+    transition: 0.5s ease-out;
+    opacity: 100%;
 }
 
+.display_general_hover_effect_inactive{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    transition-duration: 0.5s;
+    opacity: 0%;
+}
+
+.display_general_hover_effect_active{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    transition-duration: 0.5s;
+    opacity: 0%;
+    
+    transition-duration: 0s !important;
+    opacity: 20% !important;
+}
+
+.display_general_focused {
+    z-index: 200;
+    transition-duration: 1s !important;
+    transition-timing-function: cubic-bezier(0.3, -1.1, 0.25, 1);
+    animation: display_rotate 1.25s cubic-bezier(0.25, -0.5, 0.5, 1) 0s;
+}
+
+.display_general_unfocused {
+    pointer-events: none;
+    opacity: 0.1;
+    outline-width: 0px;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+#display_1 {
+    background-image: url("images/display_exponaut.png");
+    box-shadow: -1vw -1vw 2vw 0.5vw rgba(0, 0, 0, 0.5);
+}
+
+#display_2 {
+    background-image: url("images/display_moddworld.png");
+    box-shadow: 1vw 1vw 2vw 0.5vw rgb(0, 0, 0, 0.5);
+}
+
+#display_3 {
+    background-image: url("images/display_combonaut.png");
+    box-shadow: 1vw 1vw 2vw 0.5vw rgb(0, 0, 0, 0.5);
+    z-index: 101;
+}
+
+#display_4 {
+    background-image: url("images/display_graphics.png");
+    box-shadow: -1vw 1vw 2vw 0.5vw rgb(0, 0, 0, 0.5);
+    z-index: 101;
+}
+
+#display_5 {
+    background-image: url("images/display_graphics2.png");
+    box-shadow: 1vw -1vw 2vw 0.5vw rgb(0, 0, 0, 0.5);
+}
+
+
+.display_1_focused {
+    pointer-events: none;
+    width: 800px;
+    height: 450px;
+    transform: translate(-29%, -44%);
+    position: absolute;
+}
+
+.display_2_focused {
+    pointer-events: none;
+    width: 800px;
+    height: 450px;
+    transition: height 2s 0s;
+    transform: translate(-29.5%, 5.75%);
+    position: absolute;
+}
+
+.display_3_focused {
+    pointer-events: none;
+    width: 800px;
+    height: 450px;
+    transition: width 2s 0s;
+    transform: translate(6%, 5%);
+    position: absolute;
+}
+
+.display_4_focused {
+    pointer-events: none;
+    width: 800px;
+    height: 450px;
+    transition: width 1s 0s;
+    transform: translate(-86%, 6%);
+    position: absolute;
+}
+
+.display_5_focused {
+    pointer-events: none;
+    width: 800px;
+    height: 450px;
+    transition: height 2s 0s, width 2s 0s;
+    transform: translate(6%, -32%);
+    position: absolute;
+}
+
+@keyframes display_rotate {
+    0% {rotate: 0deg;
+        animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);}
+    60% {rotate: 3deg;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.4, 2);}
+    100% {rotate: 0deg;}
+}
+
+.closer {
+    width: 4vw;
+    height: 4vw;
+    z-index: 60;
+    position: absolute;
+    top: -0.7vw;
+    right: -0.7vw;
+
+    background-color: rgb(177, 18, 18);
+    border-radius: 100%;
+    outline: solid rgb(255, 53, 53) 0.4vw;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3vw;
+    line-height: 4vw;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.331);
+
+    opacity: 0%;
+    transition: 0.25s ease-out 0s;
+    pointer-events: none;
+    box-shadow: inset rgba(0, 0, 0, 0.096) 0.5vw 0.5vw 0.5vw;
+    background-image: url(images/icons/icon_closer.png);
+    background-size: cover;
+}
+
+.closer_active {
+    opacity: 100%;
+    transition: opacity 0.25s ease-out 2s, scale ease-out 0.25s 0s;
+    pointer-events: all;
+}
+
+.closer:hover {
+    transition-delay: 0s;
+    scale: 125%;
+    background-color: rgb(0, 0, 0);
+}
+
+.block_events {
+    pointer-events: none;
+}
+
+.black {
+    background-color: rgb(0, 0, 0) !important;
+    border-top-color: black !important;
+    border-bottom-color: black !important;
+    border-left-color: black !important;
+    border-right-color: black !important;
+}
+
+.start_msg {
+    position: absolute;
+    margin: auto;
+    z-index: 15;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+
+    background-color: white;
+    width: 35%;
+    height: 40%;
+    border-radius: 0.7vw;
+    box-shadow: 0vw 0vw 0.7vw black;
+    transition: ease-in 1s;
+    animation: start_box_appear 2s;
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.on_start_scale{
+    scale: 25%;
+    opacity: 50%;
+}
+
+.on_start_scale_active{
+    scale: 100%;
+    opacity: 100%;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94), 2s;
+    transition-delay: 0.75s;
+}
 
 
 
@@ -108,87 +321,6 @@ html {
     bottom: 28.3vw;
 }
 
-
-.elements_container_active {
-    transition: cubic-bezier(0.755, 0.01, 0.855, 0.2) 1s;
-    transition-delay: 0.5s;
-    outline: 20vw rgba(0, 0, 0, 0.607) solid;
-    background-color: rgb(0, 0, 0);
-
-}
-
-.elements_container_hidden {
-    opacity: 50%;
-    scale: 80%;
-    
-}
-
-.on_start_scale{
-    scale: 25%;
-}
-
-.on_start_scale_active{
-    scale: 100%;
-    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94), 2s;
-    transition-delay: 0.5s;
-}
-
-
-.closer {
-    width: 4vw;
-    height: 4vw;
-    z-index: 60;
-    position: absolute;
-    top: 0.2vw;
-    right: 2.2vw;
-
-    background-color: rgb(177, 18, 18);
-    border-radius: 100%;
-    outline: solid rgb(255, 53, 53) 0.4vw;
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    font-size: 3vw;
-    line-height: 4vw;
-    font-weight: bolder;
-    color: white;
-    text-shadow: 0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.331);
-
-    opacity: 0;
-    transition: 0.5s ease-out;
-    pointer-events: none;
-    box-shadow: inset rgba(0, 0, 0, 0.096) 0.5vw 0.5vw 0.5vw;
-    background-image: url(images/icons/icon_closer.png);
-    background-size: cover;
-
-
-}
-
-.closer_active {
-    opacity: 100%;
-    transition: 0.5s 1s ease-out;
-    pointer-events: all;
-
-
-}
-
-.closer:hover {
-    transition-delay: 0s;
-    scale: 125%;
-    background-color: rgb(0, 0, 0);
-}
-
-.element_box {
-    display: flex;
-    background-color: none;
-    outline: none;
-
-    justify-content: center;
-    align-items: center;
-
-    z-index: 5;
-
-
-}
 
 .button_a {
     width: 60%;
@@ -335,29 +467,6 @@ html {
     100% {transform: translateY(-1vw);}
 }
 
-.start_msg {
-    position: absolute;
-    margin: auto;
-    z-index: 15;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-
-    background-color: white;
-    width: 40%;
-    height: 40%;
-    border-radius: 0.7vw;
-    box-shadow: 0vw 0vw 0.7vw black;
-    transition: ease-in 1s;
-    animation: start_box_appear 2s;
-
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
-
-}
 
 @keyframes start_box_appear {
     0% {scale: 0;}
@@ -392,12 +501,13 @@ html {
 .bg_cover {
     height: 1000%;
     width: 1000%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.205);
     position: absolute;
-    top: -50vw;
-    left: -50vw;
+    top: 80vw;
+    left: -300vw;
     z-index: 250;
     transition-duration: 1s;
+    rotate: 3deg;
 
 }
 

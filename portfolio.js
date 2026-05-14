@@ -1,32 +1,4 @@
-/*Zmień poniższą wartość żeby włączyć tryb debug.
-(usunie/ukryje elementy przeszkadzające w testowaniu strony*/
-
-let debug_state
-
-debug_state = "tutaj cokolwiek poza tym tekstem włączy debug";
-
-if(debug_state == "tutaj cokolwiek poza tym tekstem włączy debug"){
-    void(0);
-    
-}
-
-else{
-    $(".start_msg").remove();
-    $(".bg_cover").remove();
-    $(".main_overlay").remove();
-
-
-}
-
-/*teraz poniżej już normalne funkcje*/
-
-
-/*
-document.querySelector("#textbox1").style.display = "none"
-*/
-
 /* A-TYPE BUTTONS */
-
 
 $(function(){
     $('#btn1a').on('click', function(){
@@ -175,6 +147,9 @@ $(function(){
 
 /* OTHER STUFF BELOW */
 
+
+
+
 $(function(){
     $('#start_msg_closer').on('click', function(){
 
@@ -189,13 +164,14 @@ $(function(){
 });
 
 
-/* debug */
+/* debug
 $('.bg_cover').toggleClass('hide_this');
 $('#start_msg_closer').toggleClass('hide_this');
 $('.start_msg').toggleClass('start_box_hide');
 
 $('.elements_container').toggleClass('elements_container_active');
 $('.on_start_scale').toggleClass('on_start_scale_active');
+*/
 
 
 var list_color_red = [
@@ -244,9 +220,7 @@ var list_color_blue = [
         "#6666FF",
 ]
 
-console.log(Math.floor(Math.random() * 3))
 var list_color = ["FF4D4D"]
-
 var rolled_list_color_id = Math.floor(Math.random() * 3)
 
 if (rolled_list_color_id == 0)
@@ -262,6 +236,7 @@ else if (rolled_list_color_id == 2)
     list_color = list_color_blue
 }
 
+
 var list_display_general = document.getElementsByClassName("display_general")
 var item_pos = 0
 
@@ -270,7 +245,142 @@ for (let x = 0; list_display_general[item_pos] != list_display_general[-1]; item
     list_display_general[item_pos].style.outlineColor = list_color[Math.floor(Math.random() * list_color.length)];
 }
 
-if(document.getElementsByTagName("HTML")[0].dir=="ltr")
-{
-    document.getElementsByClassName("first")[0].style.backgroundColor="cyan";
+
+
+$(function(){
+    $('#display_1').on('mouseleave', function(){
+        $('#display_1_hover_effect').toggleClass('display_general_hover_effect_active');
+    });
+    $('#display_1').on('mouseenter', function(){
+        $('#display_1_hover_effect').toggleClass('display_general_hover_effect_active');
+    });
+
+    $('#display_2').on('mouseleave', function(){
+        $('#display_2_hover_effect').toggleClass('display_general_hover_effect_active');
+    });
+    $('#display_2').on('mouseenter', function(){
+        $('#display_2_hover_effect').toggleClass('display_general_hover_effect_active');
+    });
+
+    $('#display_3').on('mouseleave', function(){
+        $('#display_3_hover_effect').toggleClass('display_general_hover_effect_active');
+    });
+    $('#display_3').on('mouseenter', function(){
+        $('#display_3_hover_effect').toggleClass('display_general_hover_effect_active');
+    });
+
+    $('#display_4').on('mouseleave', function(){
+        $('#display_4_hover_effect').toggleClass('display_general_hover_effect_active');
+    });
+    $('#display_4').on('mouseenter', function(){
+        $('#display_4_hover_effect').toggleClass('display_general_hover_effect_active');
+    });
+
+    $('#display_5').on('mouseleave', function(){
+        $('#display_5_hover_effect').toggleClass('display_general_hover_effect_active');
+    });
+    $('#display_5').on('mouseenter', function(){
+        $('#display_5_hover_effect').toggleClass('display_general_hover_effect_active');
+    });
+});
+
+$(function(){
+    $('#display_1').on('click', function(){
+        $('.elements_container').toggleClass('black');
+        $('html').toggleClass('black');
+
+        $('#closer_display_1').toggleClass('closer_active');
+
+        $('#display_1').toggleClass('display_1_focused');
+        $('#display_1').toggleClass('display_general_focused');
+
+        $('#display_2').toggleClass('display_general_unfocused');
+        $('#display_3').toggleClass('display_general_unfocused');
+        $('#display_4').toggleClass('display_general_unfocused');
+        $('#display_5').toggleClass('display_general_unfocused');
+
+    });
+});
+
+$(function(){
+    $('#display_2').on('click', function(){
+        $('.elements_container').toggleClass('black');
+        $('html').toggleClass('black');
+
+        $('#closer_display_2').toggleClass('closer_active');
+
+        $('#display_2').toggleClass('display_2_focused');
+        $('#display_2').toggleClass('display_general_focused');
+
+        $('#display_1').toggleClass('display_general_unfocused');
+        $('#display_3').toggleClass('display_general_unfocused');
+        $('#display_4').toggleClass('display_general_unfocused');
+        $('#display_5').toggleClass('display_general_unfocused');
+
+    });
+});
+
+$(function(){
+    $('#display_3').on('click', function(){
+        $('.elements_container').toggleClass('black');
+        $('html').toggleClass('black');
+
+        $('#closer_display_3').toggleClass('closer_active');
+
+        $('#display_3').toggleClass('display_3_focused');
+        $('#display_3').toggleClass('display_general_focused');
+
+        $('#display_1').toggleClass('display_general_unfocused');
+        $('#display_2').toggleClass('display_general_unfocused');
+        $('#display_4').toggleClass('display_general_unfocused');
+        $('#display_5').toggleClass('display_general_unfocused');
+
+    });
+});
+
+$(function(){
+    $('#display_4').on('click', function(){
+        $('.elements_container').toggleClass('black');
+        $('html').toggleClass('black');
+
+        $('#closer_display_4').toggleClass('closer_active');
+
+        $('#display_4').toggleClass('display_4_focused');
+        $('#display_4').toggleClass('display_general_focused');
+
+        $('#display_1').toggleClass('display_general_unfocused');
+        $('#display_2').toggleClass('display_general_unfocused');
+        $('#display_3').toggleClass('display_general_unfocused');
+        $('#display_5').toggleClass('display_general_unfocused');
+
+    });
+});
+
+$(function(){
+    $('#display_5').on('click', function(){
+        $('.elements_container').toggleClass('black');
+        $('html').toggleClass('black');
+
+        $('#closer_display_5').toggleClass('closer_active');
+
+        $('#display_5').toggleClass('display_5_focused');
+        $('#display_5').toggleClass('display_general_focused');
+
+        $('#display_1').toggleClass('display_general_unfocused');
+        $('#display_2').toggleClass('display_general_unfocused');
+        $('#display_3').toggleClass('display_general_unfocused');
+        $('#display_4').toggleClass('display_general_unfocused');
+
+    });
+});
+
+/* randomize display image
+
+for (let x = 1; x < 6; x ++) {
+    rolled_number = Math.floor(Math.random() * 5) + 1
+    console.log(rolled_number)
+    console.log(x)
+    document.getElementById("display_" + String(x)).style.backgroundImage = "url('images/" + String(rolled_number) + ".png')";
 }
+
+*/

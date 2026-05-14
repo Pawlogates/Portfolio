@@ -18,32 +18,46 @@
     <meta name="keywords" content="thing1, thing2"/>
     <meta name="description" content="description of the website">
 
-
-    <!--css file reference-->
-
     <link rel="stylesheet" href="portfolio.css">
     
 </head>
 
 <body>
 
+    <div class="start_msg" style="z-index: 300;">
+
+        <p class="start_msg_text">Tutaj tekst jakis bedzie</p>
+        <div class="closer closer_active" id="start_msg_closer"></div>
+        
+    </div>
+
     <div class="main_container">
 
         <div class="elements_container on_start_scale">
 
-            <div class="display_general" style="grid-column: 6 / span 11; grid-row: 5 / span 6;">
+            <div class="display_general" id="display_1" style="grid-column: 6 / span 11; grid-row: 5 / span 6;">
+                <div class="display_general_hover_effect_inactive" id="display_1_hover_effect"></div>
+                <div class="closer" id="closer_display_1"></div>
             </div>
             
-            <div class="display_general" style="grid-column: 6 / span 8; grid-row: 1 / span 5;">
+            <div class="display_general" id="display_2" style="grid-column: 6 / span 8; grid-row: 1 / span 5;">
+                <div class="display_general_hover_effect_inactive" id="display_2_hover_effect"></div>
+                <div class="closer" id="closer_display_2"></div>
             </div>
 
-            <div class="display_general" style="grid-column: 1 / span 6; grid-row: 1 / span 3;">
+            <div class="display_general" id="display_3" style="grid-column: 1 / span 6; grid-row: 1 / span 3;">
+                <div class="display_general_hover_effect_inactive" id="display_3_hover_effect"></div>
+                <div class="closer" id="closer_display_3"></div>
             </div>
 
-            <div class="display_general" style="grid-column: 14 / span 3; grid-row: 1 / span 4;">
+            <div class="display_general" id="display_4" style="grid-column: 14 / span 3; grid-row: 1 / span 4;">
+                <div class="display_general_hover_effect_inactive" id="display_4_hover_effect"></div>
+                <div class="closer" id="closer_display_4"></div>
             </div>
 
-            <div class="display_general" style="grid-column: 1 / span 5; grid-row: 4 / span 7;">
+            <div class="display_general" id="display_5" style="grid-column: 1 / span 5; grid-row: 4 / span 7;">
+                <div class="display_general_hover_effect_inactive" id="display_5_hover_effect"></div>
+                <div class="closer" id="closer_display_5"></div>
             </div>
 
             
@@ -57,287 +71,6 @@
 
             <div class="main_overlay2"></div>
 
-            <!--
-            
-            <div class="element_box" style="grid-column: 2; grid-row: 2;">
-                <div class="button_a" id="btn1a"></div>
-                <div class="button_a_text">1</div>
-
-                    
-            </div>
-
-            <div class="element_box" style="grid-column: 2; grid-row: 3; transform: translateX(1vw);">
-                <div class="button_a" id="btn2a"></div>
-                <h1 class="button_a_text">2</h1>
-
-                    
-            </div>
-
-            <div class="element_box" style="grid-column: 2; grid-row: 4; transform: translateX(2vw);">
-                <div class="button_a" id="btn3a"></div>
-                <h1 class="button_a_text">3</h1>
-
-                    
-            </div>
-
-            <div class="element_box" style="grid-column: 2; grid-row: 5; transform: translateX(1vw);">
-                <div class="button_a" id="btn4a"></div>
-                <h1 class="button_a_text">4</h1>
-
-                    
-            </div>
-
-            <div class="element_box" style="grid-column: 2; grid-row: 6; transform: translateX(0vw);">
-                <div class="button_a" id="btn5a"></div>
-                <h1 class="button_a_text">5</h1>
-
-                    
-            </div>
-            
-            <div class="element_box" style="grid-column: 3; grid-row: 6; transform: translateX(0vw);">
-                <div class="button_a" id="btn6a"></div>
-                <h1 class="button_a_text">6</h1>
-
-                    
-            </div>
-            
-            -->
-
-            <!--
-            <div class="element_box" style="grid-column: 7; grid-row: 8;">
-
-                <div class="button_b" id="btn1b" style="z-index: 50;"></div>
-                <div class="button_b_icon" style="z-index: 51;"></div>
-                
-                <div class="item_moveup">
-                    <img src="images/item1_moveup.png" id="item_moveup1">
-                    <div class="info_contact" id="item_moveup1">
-                        <p style="color: white; margin-top: 0.1vw; font-weight: bolder; letter-spacing: 0.2vw; text-align: center;">KONTAKT</p>
-                        <p style="margin: 0.4vw;">Email: gajewskipawel357@gmail.com</p>
-                        <p style="margin: 0.4vw;">Tel: 739 155 475</p>
-
-                    </div>
-                </div>
-                
-                    
-            </div>
-            -->
-            
-            <!--
-            <div class="element_box btn1c_root" id="btn1c_moveUp" style="grid-column: 15; grid-row: 3; transform: translateY(0vw); animation: 5s updownloop ease-in-out infinite; z-index: 201; scale: 75%; transition-duration: 1s !important;">
-                <div class="button_c" id="btn1c"></div>
-                <div class="button_c_icon"></div>
-                
-                
-            </div>
-            -->
-
-            <!--
-
-            <div class="element_box" style="grid-column: 6 / span 3; grid-row: 4 / span 4;">
-
-                <div class="moveup1box">
-                <div class="moveup1">
-                    <div class="upbg1a"></div>
-                    <div class="upbg1b"></div>
-                    <div class="upbg1c"></div>
-                    <div class="upbg1d"></div>
-
-
-
-
-                </div>
-                </div>
-
-
-
-            </div>
-
-            -->
-
-            <!--
-
-            <div class="element_box" style="grid-column: 11 / span 2; grid-row: 4 / span 2;">
-
-                <div class="moveup1box">
-                <div class="moveup1 m1fix" style="transform: translate(-3vw, 0vw) scale(25%); animation-duration: 2s; animation-delay: 0.05s; animation-timing-function: cubic-bezier(.69,-1.07,.4,2.05);">
-                    <div class="upbg1a"></div>
-                    <div class="upbg1b"></div>
-                    <div class="upbg1c"></div>
-                    <div class="upbg1d"></div>
-                </div>
-
-                <div class="moveup1 m2fix" style="transform: translate(-5vw, 0vw) scale(25%); animation-duration: 2s; animation-delay: 0s; animation-timing-function: cubic-bezier(.69,-1.07,.4,2.05);">
-                    <div class="upbg1a"></div>
-                    <div class="upbg1b"></div>
-                    <div class="upbg1c"></div>
-                    <div class="upbg1d"></div>
-                </div>
-
-                <div class="moveup1 m3fix" style="transform: translate(-1vw, 0vw) scale(25%); animation-duration: 2s; animation-delay: 0.1s; animation-timing-function: cubic-bezier(.69,-1.07,.4,2.05);">
-                    <div class="upbg1a"></div>
-                    <div class="upbg1b"></div>
-                    <div class="upbg1c"></div>
-                    <div class="upbg1d"></div>
-                </div>
-                </div>
-
-
-
-            </div>
-
-            -->
-            
-            <!--
-            <div class="element_box user_picture_root" style="grid-column: 14 / span 2; grid-row: 2 / span 2; transform: translate(2.2vw, -2.2vw);">
-                <div class="user_picture"></div>            
-                
-            </div>
-            -->
-
-
-
-
-
-
-        </div>
-
-
-
-<!-- ELEMENT CONTAINER END -->
-<!--
-
-        <div class="slider" id="slider1" style="background-image: url(images/bg_a2.png);">
-
-            <div class="section_type1">
-                <div class="inside_section">
-                    <h1 class="text_top">Projekt 1 - Moddworld</h1>
-                    <p class="text_main">Jest to strona internetowa, stworzona w celu dokumentacji i zapewnienia łatwego dostępu do fanowskich modów do gry "Oddworld: Abe's Oddysee". </p>
-                    <a class="text_link" href="Moddworld/Moddworld.html" style="width: 50%;;">Link do strony</a>
-                </div>
-            </div>
-
-            <div class="section_type2" style="background-image: url(images/display_moddworld.png);">
-                <div class="inside_section">
-
-                </div>
-            </div>
-
-        </div>
-
-        <div class="slider" id="slider2" style="background-image: url(images/display_combonaut.png);">
-
-            <div class="section_type1">
-                <div class="inside_section">
-                    <h1 class="text_top">Projekt 2 - Combonaut</h1>
-                    <p class="text_main">Moja pierwsza gra, napisana w html, css i javascript. Polega na używaniu mnożników punktów w odpowiedni sposób, aby zdobyć jak najwięcej punktów.</p>
-                    <a class="text_link" href="Combonaut/Combonaut.html">Link do gry</a>
-              
-                </div>
-            </div>
-
-            <div class="section_type2" style="background-image: url(images/display_combonaut2.png);">
-                <div class="inside_section">
-
-                </div>
-            </div>
-
-        </div>
-
-        <div class="slider" id="slider3" style="background-image: url(images/wp4.png);">
-
-            <div class="section_type1" style="height: 30vw;">
-                <div class="inside_section">
-                    <h1 class="text_top">Projekt 3 - Pekka Kana Zero</h1>
-                    <p class="text_main">Pełne odtworzenie gry Pekka Kana 2 w silniku Godot, oraz przerobienie całej grafiki na wersję wysokiej jakości. (Nadal bardzo aktywnie pracuję nad tą bazą, i ostateczna grą ma na razie nazwę "Exponaut". Pekka Kana Zero to tylko branch tego projektu bo chciałem mieć coś SKOŃCZONEGO po 4 miesiącach aktywnej pracy. Gra jest (bardzo) oparta na nielinearności, oraz systemach pozwalających na sprytne zwiększanie wartości zbieranych punktów.)</p>
-                        <div style="display: flex; align-items: flex-end; margin-top: 0;">
-                            <a class="text_link" style="display: inline; font-size: 2vw; margin-top: 2vw;" href="https://godotengine.org/asset-library/asset/2455">Strona gry</a>
-                            <a class="text_link" style="display: inline; font-size: 2vw; margin-top: 2vw;" href="https://youtu.be/U1-YAEV2icw?si=RcnVkANvFQuSX_Ft">Film z gry</a>
-                        </div>
-
-                </div>
-            </div>
-
-            <div class="section_type2" style="background-image: url(images/display_exponaut.png);">
-                <div class="inside_section">
-
-                </div>
-            </div>
-
-        </div>
-
-        <div class="slider" id="slider4" style="background-image: url(images/Portfolio\ \(rysunek\).png); transform: translateX(-15vw);">
-
-            <div class="section_type1 hide_on_hover slider4hack2" style="left: 0vw;">
-                <div class="inside_section" style="height: 20vw !important;">
-                    <h1 class="text_top">Grafika</h1>
-                    <p class="text_main">...</p>
-         
-                </div>
-            </div>
-
-            <div class="section_type2 hide_on_hover slider4hack1" style="background-image: url(images/Portfolio\ \(design\).png);">
-                <div class="inside_section">
-
-                </div>
-            </div>
-
-        </div>
-
-        <div class="slider" id="slider5" style="background-image: url(images/wp8.png);">
-
-            <div class="section_type1" style="height: 15vw !important; aspect-ratio: 2/1 !important;">
-                <div class="inside_section">
-                    <h1 class="text_top">???</h1>
-                    <p class="text_main" style="text-align: center;">Kilka niedokończonych projektów stron.</p>
-                    <a class="text_link" href="https://moddworld-ow.github.io/" target="_blank" style="margin-top: 3vw; font-size: 1.8vw;">Link do strony</a>
-
-                </div>
-            </div>
-
-            <div class="section_type2" style="background-image: url(images/wp4.png);">
-                <div class="inside_section">
-
-                </div>
-            </div>
-
-        </div>
-
-        -->
-
-        <!--
-        <div class="slider slider_long slider_active" id="slider6" style="background-color: rgba(0, 0, 0, 0) !important;">
-            <div class="slider_long_display">
-                <img src="images/Portfolio (design).png" class="slider_long_content">
-                <img src="images/Portfolio (rysunek).png" class="slider_long_content">
-                <img src="images/display_combonaut.png" class="slider_long_content">
-                <img src="images/display_combonaut2.png" class="slider_long_content">
-                <img src="images/display_moddworld.png" class="slider_long_content">
-                <img src="images/t1.png" class="slider_long_content">
-                <img src="images/thumbnail.png" class="slider_long_content">
-                <img src="images/t2.png" class="slider_long_content">
-            </div>
-        </div>
-        -->
-
-        <!--
-        <div class="closer" id="closer1"></div>
-        <div class="closer" id="closer2"></div>
-        <div class="closer" id="closer3"></div>
-        -->
-
-        <!--
-        <div class="closer" id="closer4" style="top : -0.8vw"></div>
-        <div class="closer" id="closer5"></div>
-        <div class="closer closer_active" id="closer6" style="z-index: 200; top: 17.5vw; right: -0.6vw;"></div>
-        -->
-
-
-
-        <div class="start_msg" style="z-index: 300;">
-            <p class="start_msg_text">Tutaj tekst jakis bedzie</p>
-            <div class="closer" id="start_msg_closer"></div>
-        </div>
 
         <div class="bg_cover"></div>
 
